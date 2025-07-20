@@ -25,5 +25,5 @@ content:
   - name: metadata
     label: Metadata
     type: file
-    path: src/_data/site.js
+    path: src/_data/site.json
     format: code
