@@ -1,7 +1,7 @@
 {
     "repoUrl": "https://github.com/ContractsManagement/legal-concepts.git",
     "repoDefaultBranch": "main",
-    "rootUrl": "https://ContractsManagement.netlify.app",
+    "rootUrl": "https://contractsmanagement.github.io/legal-topics/",
     "name": "Construction Contracts Management Concepts",
     "logoUrl": "/images/logo.png",
     "faviconUrl": "/images/logo.ico",
