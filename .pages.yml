@@ -15,6 +15,21 @@ content:
       - { name: imageUrl, label: Image URL, type: string }
       - { name: imageCredits, label: Image Credits, type: string }
       - { name: body, label: Body, type: rich-text }
+  - name: products
+    label: Products
+    type: collection
+    path: src/en/products
+    view:
+      fields: [ title, tags ]
+    fields:
+      - { name: title, label: Title, type: string, required: true }
+      - { name: author, label: Author, type: string }
+      - { name: date, label: Date, type: date }
+      - { name: tags, label: Tags, type: string, list: true }
+      - { name: keywords, label: Keywords, type: string, list: true }
+      - { name: imageUrl, label: Image URL, type: string }
+      - { name: imageCredits, label: Image Credits, type: string }
+      - { name: body, label: Body, type: rich-text }
   - name: about
     label: About page
     type: file
