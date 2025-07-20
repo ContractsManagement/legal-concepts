@@ -22,7 +22,7 @@ jobs:
       - name: Setup Node.js environment
         uses: actions/setup-node@v4.4.0
         with:
-          node-version: "14"
+          node-version: "latest"
       - run: yarn install
 
       - name: Set OpenSSL legacy provider for Node.js 17+
