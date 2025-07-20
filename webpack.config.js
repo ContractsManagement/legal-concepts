@@ -20,6 +20,7 @@ module.exports = {
     }),
     new webpack.ProvidePlugin({
       Buffer: ['buffer', 'Buffer'],
+      process: 'process/browser',
     }),
     // new VueLoaderPlugin()
   ],
@@ -27,14 +28,34 @@ module.exports = {
     extensions: ['*', '.js', '.jsx'],
     alias: {
       'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
+    },
+    fallback: {
+      "url": require.resolve("url/"),
+      "formdata-node": require.resolve("formdata-node"),
+      "btoa": require.resolve("btoa"),
+      "qs": require.resolve("qs"),
+      "traverse": require.resolve("traverse"),
+      "cookie": require.resolve("cookie"),
+      "crypto": require.resolve("crypto-browserify"),
+      "stream": require.resolve("stream-browserify"),
+      "assert": require.resolve("assert"),
+      "buffer": require.resolve("buffer"),
+      "process": require.resolve("process/browser"),
+      "util": require.resolve("util"),
+      "path": require.resolve("path-browserify"),
+      "querystring": require.resolve("querystring"),
+      "os": require.resolve("os-browserify/browser"),
+      "fs": false,
+      "net": false,
+      "tls": false
     }
   },
   module: {
     rules: [
       {
-      test: /\.css$/,
-      // exclude: /node_modules/,
-      use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
+        test: /\.css$/,
+        // exclude: /node_modules/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader']
       },
       {
         test: /\.(js|jsx)$/,
