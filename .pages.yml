@@ -42,3 +42,9 @@ content:
     type: file
     path: src/_data/site.json
     format: json
+    
+  - name: workflow
+    label: Workflow
+    type: file
+    path: .github/workflows/deploy-gh-pages.yml
+    format: yaml
