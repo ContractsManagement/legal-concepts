@@ -25,6 +25,9 @@ jobs:
           node-version: "latest"
       - run: yarn install
 
+      - name: Set OpenSSL legacy provider for Node.js 17+
+        run: echo "NODE_OPTIONS=--openssl-legacy-provider" >> $GITHUB_ENV
+
       - name: Build Eleventy
         run: yarn build
         env:
