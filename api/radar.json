@@ -11,7 +11,7 @@
       "radar_id": "radar",
       "radar_category": "techniques",
       "radar_ring": "adopt",
-      "content": "&quot;2020-07-25 Adopt\nKeep you software artifacts in sync with domain.\n&quot;",
+      "content": "&quot;2020-07-25 Adopt&#92;nKeep you software artifacts in sync with domain.&#92;n&quot;",
       "homepage": "",
       "repo": ""
     },
@@ -27,7 +27,7 @@
       "radar_id": "radar",
       "radar_category": "tools",
       "radar_ring": "adopt",
-      "content": "&quot;2020-07-25 Adopt\nType checking at comiple time!\n&quot;",
+      "content": "&quot;2020-07-25 Adopt&#92;nType checking at comiple time!&#92;n&quot;",
       "homepage": "https://www.typescriptlang.org/",
       "repo": "https://github.com/microsoft/TypeScript"
     }

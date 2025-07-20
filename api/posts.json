@@ -3,21 +3,21 @@
     {
       "title": "My First Post",
       "lang": "en",
-      "tags": "post",
+      "tags": "post,post",
       "url": "/en/posts/2020-07-10-first-post/",
       "keywords": "general",
       "objectID": "/en/posts/2020-07-10-first-post/",
-      "content": "&quot;Hurray! My first post using Fundamenty!\n&quot;"
+      "content": "&quot;Hurray! My first post using Fundamenty!&#92;n&quot;"
     },
   
     {
       "title": "Mi primer artículo",
       "lang": "es",
-      "tags": "post",
+      "tags": "post,post",
       "url": "/es/posts/2020/2020-07-10-primer-articulo/",
       "keywords": "general",
       "objectID": "/es/posts/2020/2020-07-10-primer-articulo/",
-      "content": "&quot;Hurra! Mi primer artículo basado en Fundamenty!\n&quot;"
+      "content": "&quot;Hurra! Mi primer artículo basado en Fundamenty!&#92;n&quot;"
     }
   
 ]
