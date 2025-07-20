@@ -18,7 +18,7 @@ content:
   - name: products
     label: Products
     type: collection
-    path: src/en/products
+    path: src/en/products/repo
     view:
       fields: [ title, tags ]
     fields:
