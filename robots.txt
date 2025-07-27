@@ -1,4 +1,4 @@
-Sitemap: https://ContractsManagement.github.io//sitemap.xml
+Sitemap: https://contractsmanagement.github.io/legal-concepts/sitemap.xml
 
 User-agent: *
 Disallow:
