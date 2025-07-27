@@ -1,14 +1,14 @@
 # Once you complete modifying this file, run
 # $ yarn fundamenty:tool init
-name: Fundamenty2
+name: Construction Law Concepts Repository
 repoUrl: https://github.com/ContractsManagement/legal-concepts.git
-rootUrl: https://fundamenty.netlify.app
+rootUrl: https://contractsmanagement.github.io/legal-concepts
 defaultLang: en
 langs:
   - id: en
     name: English
 
-WEB_ROOT_URL: http://localhost
+WEB_ROOT_URL: https://contractsmanagement.github.io/legal-concepts
 ALGOLIA_APP_ID:
 ALGOLIA_INDEX_NAME:
 ALGOLIA_SEARCH_API_KEY:
