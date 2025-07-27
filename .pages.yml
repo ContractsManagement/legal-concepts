@@ -3,9 +3,9 @@ content:
   - name: posts
     label: Posts
     type: collection
-    path: src/en/posts
+    path: src/posts
     view:
-      fields: [ title, author, date, tags ]
+      fields: [title, author, date, tags]
     fields:
       - { name: title, label: Title, type: string, required: true }
       - { name: author, label: Author, type: string }
@@ -18,9 +18,9 @@ content:
   - name: products
     label: Products
     type: collection
-    path: src/en/products/repo
+    path: src/products/repo
     view:
-      fields: [ title, tags ]
+      fields: [title, tags]
     fields:
       - { name: title, label: Title, type: string, required: true }
       - { name: author, label: Author, type: string }
@@ -33,7 +33,7 @@ content:
   - name: about
     label: About page
     type: file
-    path: src/en/pages/about.md
+    path: src/pages/about.md
     fields:
       - { name: title, label: Title, type: string, required: true }
       - { name: body, label: Body, type: rich-text }
@@ -42,7 +42,7 @@ content:
     type: file
     path: src/_data/site.json
     format: json
-    
+
   - name: workflow
     label: Workflow
     type: file

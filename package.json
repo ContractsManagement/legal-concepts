@@ -1,7 +1,7 @@
 {
     "name": "legal-concepts",
     "description": "Construction Law Concepts Repository - Comprehensive legal reference guide",
-    "homepage": "https://contractsmanagement.github.io/legal-concepts/en",
+    "homepage": "https://contractsmanagement.github.io/legal-concepts",
     "keywords": [
         "legal",
         "construction law",
@@ -16,7 +16,7 @@
     "devDependencies": {
         "@11ty/eleventy": "^3.1.2",
         "@11ty/eleventy-plugin-syntaxhighlight": "^5.0.1",
-        "@appbaseio/reactivesearch": "^3.45.0",
+        "@appbaseio/reactivesearch": "^4.3.0",
         "@elastic/elasticsearch": "^7.17.14",
         "@vue/compiler-sfc": "^3.4.21",
         "alex": "^9.1.1",
@@ -29,6 +29,7 @@
         "chalk": "^4.1.2",
         "concurrently": "^9.2.0",
         "cookie": "^1.0.2",
+        "cross-env": "^10.0.0",
         "crypto-browserify": "^3.12.1",
         "css-loader": "^6.11.0",
         "formdata-node": "^6.0.3",
@@ -64,12 +65,12 @@
         "serve:webpack": "webpack --mode development --watch",
         "serve:eleventy": "eleventy --serve --watch --port=3003",
         "serve": "yarn run clean && concurrently --names \"webpack,eleventy\" --prefix-colors \"blue,green\" \"yarn serve:webpack\" \"yarn serve:eleventy\"",
-        "build:webpack": "webpack --mode production",
-        "build:eleventy": "eleventy",
+        "build:webpack": "cross-env NODE_ENV=production webpack --mode production",
+        "build:eleventy": "cross-env ELEVENTY_ENV=production eleventy",
         "build": "yarn clean && yarn build:webpack && yarn build:eleventy",
         "algolia:tool": "node ./tools/algolia-tool.js",
         "es:tool": "node ./tools/es-tool.js",
-        "alex": "alex ./src/en",
+        "alex": "alex ./src",
         "legal-cli": "node ./tools/fundamenty-cli.js",
         "generate:concepts": "node ./tools/generate-concept-pages.js"
     },
@@ -79,6 +80,6 @@
         "@babel/preset-react": "^7.14.5",
         "babel-loader": "^8.2.2",
         "dotenv": "^10.0.0",
-        "swagger-ui-react": "^3.52.0"
+        "swagger-ui-react": "4.15.5"
     }
 }

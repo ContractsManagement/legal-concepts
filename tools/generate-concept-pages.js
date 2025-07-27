@@ -14,7 +14,7 @@ function createSlug(text) {
 
 // Generate individual concept pages
 function generateConceptPages() {
-  const conceptsDir = path.join(__dirname, '../src/en/concepts/repo');
+  const conceptsDir = path.join(__dirname, '../src/concepts/repo');
 
   // Ensure directory exists
   if (!fs.existsSync(conceptsDir)) {
@@ -31,7 +31,7 @@ title: "${concept.principleName}"
 description: "${concept.coreConcept.elevatorPitch.replace(/"/g, '\\"')}"
 keywords: "${concept.principleName}, ${concept.aliases ? concept.aliases.join(', ') + ', ' : ''}${concept.fieldOfLaw}, ${concept.primaryJurisdiction}, construction law, legal concept"
 layout: concepts/concepts_item.njk
-permalink: "/en/concepts/{{ title | slug }}/"
+permalink: "{{ site.rootUrl }}/concepts/{{ title | slug }}/"
 concept:
   principleName: "${concept.principleName}"
   aliases: ${JSON.stringify(concept.aliases || [])}

@@ -1,16 +1,31 @@
 {
     "repoUrl": "https://github.com/ContractsManagement/legal-concepts.git",
     "repoDefaultBranch": "main",
-    "rootUrl": "https://contractsmanagement.github.io/legal-concepts/en",
+    "rootUrl": "https://contractsmanagement.github.io/legal-concepts",
     "name": "Construction Law Concepts Repository",
     "logoUrl": "/images/logo.png",
     "faviconUrl": "/images/logo.ico",
     "googleTagId": "",
-    "defaultLang": "en",
-    "langs": [
-        {
-            "id": "en",
-            "name": "English"
-        }
-    ]
+    "menu": {
+        "top": [
+            {
+                "title": "About",
+                "href": "/pages/about/",
+                "icon": "fa fa-info",
+                "tooltip": "About this site"
+            },
+            {
+                "title": "Concepts",
+                "href": "/concepts/",
+                "icon": "fa fa-book",
+                "tooltip": "Browse legal concepts"
+            }
+        ]
+    },
+    "searchPlaceholder": "Search concepts...",
+    "publishedOn": "Published on",
+    "updatedOn": "Updated on",
+    "by": "by",
+    "articles": "Articles",
+    "editOnGit": "Edit on GitHub"
 }

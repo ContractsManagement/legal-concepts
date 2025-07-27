@@ -1,11 +1,11 @@
 module.exports = {
-    purge: {
-        enabled: (process.env.ELEVENTY_ENV === 'production'),
-        content: [
-            './src/**/*.njk',
-            './src/**/*.md'
-        ]
-    },
+    purge: [
+        './src/**/*.njk',
+        './src/**/*.md',
+        './src/**/*.js',
+        './src/**/*.jsx',
+        './_site/**/*.html'
+    ],
     theme: {
         fontSize: {
             'xs': '.75rem',

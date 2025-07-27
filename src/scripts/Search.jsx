@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactiveBase, MultiList, DataSearch, ReactiveList } from '@appbaseio/reactivesearch';
+import { ReactiveBase, MultiList, SearchBox, ReactiveList } from '@appbaseio/reactivesearch';
 
 export default function Search() {
 
@@ -17,43 +17,43 @@ export default function Search() {
 
   return (
     <ReactiveBase
-          app={params.esIndex}
-          credentials={params.esCredentials}
-          url={params.esUrl}
-        >
+      app={params.esIndex}
+      credentials={params.esCredentials}
+      url={params.esUrl}
+    >
       <div className="flex">
         <div className="w-1/4 ">
           <MultiList
-              componentId="Tags"
-              dataField="tags"
-              className="filter"
-              title="Select Tags"
-              selectAllLabel="All Tags"
+            componentId="Tags"
+            dataField="tags"
+            className="filter"
+            title="Select Tags"
+            selectAllLabel="All Tags"
           />
         </div>
 
         <div className="w-3/4 m-2">
-          <DataSearch
+          <SearchBox
             componentId="SearchSensor"
             dataField={['title', 'content']}
           />
           <ReactiveList
-              componentId="SearchResult"
-              dataField="title.keyword"
-              className="result-list-container"
-              pagination={true}
-              from={0}
-              size={10}
-              react={ {and: ['Tags', 'SearchSensor'] } }
-              
-              renderItem={( item ) => (
-                    <div key={item._id}>
-                      <div >
-                        <a href={params.pathPrefix + item.url} >{ item.title }</a>
-                        <div className="px-1 text-xs rounded-lg bg-indigo-700 text-white inline-block ml-2">{ item.tags }</div>
-                      </div>
-                    </div>
-                )}
+            componentId="SearchResult"
+            dataField="title.keyword"
+            className="result-list-container"
+            pagination={true}
+            from={0}
+            size={10}
+            react={{ and: ['Tags', 'SearchSensor'] }}
+
+            renderItem={(item) => (
+              <div key={item._id}>
+                <div >
+                  <a href={params.pathPrefix + item.url} >{item.title}</a>
+                  <div className="px-1 text-xs rounded-lg bg-indigo-700 text-white inline-block ml-2">{item.tags}</div>
+                </div>
+              </div>
+            )}
           />
 
         </div>

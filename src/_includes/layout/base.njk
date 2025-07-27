@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="{{ locale }}">
+<html lang="en">
   <head profile="http://www.w3.org/2005/10/profile">
     {% if site.googleTagId %}
       <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -287,6 +287,9 @@
   <body>
     {% include './top-nav.njk' %}
 
+    {% block hero %}{% endblock %}
+
+    {% block content %}
     <div class="container w-full flex flex-wrap mx-auto px-2 pt-8 lg:pt-16 mt-16">
       <div class="content w-full">
         {{ content | safe }}
@@ -297,11 +300,13 @@
       </div>
       {% endif %}
     </div>
+    {% endblock %}
 
     {% include './footer.njk' %}
 
     <script src="{{ '/assets/main.js' | url }}"></script>
 
+    {% block scripts %}
     <script>
 
       /* https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8 */
@@ -310,8 +315,74 @@
       var navMenuDiv = document.getElementById("nav-content");
       var navMenu = document.getElementById("nav-toggle");
 
-      var helpMenuDiv = document.getElementById("menu-content");
-      var helpMenu = document.getElementById("menu-toggle");
+
+      document.onclick = check;
+
+      function check(e) {
+        var target = (e && e.target) || (event && event.srcElement);
+
+        //Nav Menu
+        if (!checkParent(target, navMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, navMenu)) {
+            // click on the link
+            if (navMenuDiv.classList.contains("hidden")) {
+              navMenuDiv
+                .classList
+                .remove("hidden");
+            } else {
+              navMenuDiv
+                .classList
+                .add("hidden");
+            }
+          } else {
+            // click both outside link and outside menu, hide menu
+            navMenuDiv
+              .classList
+              .add("hidden");
+          }
+        }
+
+        //Help Menu
+        if (!checkParent(target, helpMenuDiv)) {
+          // click NOT on the menu
+          if (checkParent(target, helpMenu)) {
+            // click on the link
+            if (helpMenuDiv.classList.contains("hidden")) {
+              helpMenuDiv
+                .classList
+                .remove("hidden");
+            } else {
+              helpMenuDiv
+                .classList
+                .add("hidden");
+            }
+          } else {
+            // click both outside link and outside menu, hide menu
+            helpMenuDiv
+              .classList
+              .add("hidden");
+          }
+        }
+
+      }
+
+      function checkParent(t, elm) {
+        while (t.parentNode) {
+          if (t == elm) {
+            return true;
+          }
+          t = t.parentNode;
+        }
+        return false;
+      }
+
+      /* https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8 */
+      /* Toggle dropdown list */
+
+      var navMenuDiv = document.getElementById("nav-content");
+      var navMenu = document.getElementById("nav-toggle");
+
 
       document.onclick = check;
 
@@ -379,7 +450,7 @@
  * Disqus
  */
 var disqus_config = function () {
-this.language = "{{ locale }}";
+this.language = "en";
 this.page.title = '{{ title }}';
 this.page.url = '{{ site.rootUrl }}{{ page.url }}';  // Replace PAGE_URL with your page's canonical URL variable
 this.page.identifier = '{{ page.fileSlug }}'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
@@ -392,5 +463,6 @@ s.setAttribute('data-timestamp', +new Date());
 })();
 {% endif %}
     </script>
+    {% endblock %}
   </body>
 </html>

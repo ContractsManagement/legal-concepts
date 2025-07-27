@@ -6,6 +6,8 @@ const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const { VueLoaderPlugin } = require('vue-loader');
 
+const isProduction = process.env.NODE_ENV === 'production';
+
 module.exports = {
   entry: './src/scripts/main.js',
   output: {
@@ -16,7 +18,10 @@ module.exports = {
     new MiniCssExtractPlugin(),
     new webpack.DefinePlugin({
       // "process.env": JSON.stringify(dotenv.parsed)
-      "process.env": JSON.stringify(process.env)
+      "process.env": JSON.stringify({
+        ...process.env,
+        ELEVENTY_ENV: isProduction ? 'production' : 'development'
+      })
     }),
     new webpack.ProvidePlugin({
       Buffer: ['buffer', 'Buffer'],

@@ -1,7 +1,6 @@
 import '../styles/main.css';
 import React from 'react';
 import ReactDOM from 'react-dom';
-import Search from './Search';
 import ApiDocSwagger from './ApiDocSwagger';
 
 
@@ -12,7 +11,12 @@ const ENABLE = false;
 
 // TODO: Find a better way to render the dom 
 const searchContainer = document.querySelector('#search-container');
-ENABLE && (searchContainer) && ReactDOM.render(<Search />, searchContainer);
+if (ENABLE && searchContainer) {
+    // Dynamic import to avoid bundling when disabled
+    import('./Search').then(({ default: Search }) => {
+        ReactDOM.render(<Search />, searchContainer);
+    });
+}
 
 // Instantiate API Swagger component
 const apiswaggerContainer = document.querySelector('#apiswagger-container');

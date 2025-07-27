@@ -1,20 +1,9 @@
 const _site = require("./site.json");
 
 let site = {
+    ..._site,
     buildTime: new Date(),
 };
-
-/**
- * Get localization:
- * site[locale]._t.search
- * site[locale]._t.menu.top
- */
-for (lang of _site.langs) {
-    site[lang.id] = {
-        menu: require(`./l10n/menu_${lang.id}.json`),
-        _t: require(`./l10n/messages_${lang.id}.json`)
-    }
-}
 
 if (process.env.WEB_ROOT_URL) {
     site.rootUrl = process.env.WEB_ROOT_URL;
