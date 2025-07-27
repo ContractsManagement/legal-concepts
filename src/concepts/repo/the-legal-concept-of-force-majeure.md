@@ -1,7 +1,7 @@
 ---
 title: "The Legal Concept of Force Majeure"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Legal Concept of Force Majeure"
   aliases: ["Superior Force","Acts of God","Vis Major","Circumstances Beyond Control"]

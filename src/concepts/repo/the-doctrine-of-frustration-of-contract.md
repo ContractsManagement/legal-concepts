@@ -1,7 +1,7 @@
 ---
 title: "The Doctrine of Frustration of Contract"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Doctrine of Frustration of Contract"
   aliases: ["Frustration of Purpose","Supervening Impossibility","Discharge by Frustration","Taylor v Caldwell Doctrine"]

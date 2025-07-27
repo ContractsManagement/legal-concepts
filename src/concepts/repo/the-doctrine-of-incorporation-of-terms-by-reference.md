@@ -1,7 +1,7 @@
 ---
 title: "The Doctrine of Incorporation of Terms by Reference"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Doctrine of Incorporation of Terms by Reference"
   aliases: ["Incorporation by Reference","Documentary Incorporation","External Terms Incorporation"]

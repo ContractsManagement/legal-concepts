@@ -1,7 +1,7 @@
 ---
 title: "The Principles Underpinning Collateral Warranties"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Principles Underpinning Collateral Warranties"
   aliases: ["Collateral Warranties","Third Party Warranties","Professional Warranties","Contractor Warranties"]

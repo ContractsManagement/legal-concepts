@@ -1,7 +1,7 @@
 ---
 title: "The Implied Duty of Fitness for Purpose"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Implied Duty of Fitness for Purpose"
   aliases: ["Fitness for Purpose Obligation","Warranty of Fitness for Purpose","Strict Duty of Result"]

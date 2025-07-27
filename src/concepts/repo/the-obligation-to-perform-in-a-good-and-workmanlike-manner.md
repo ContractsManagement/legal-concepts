@@ -1,7 +1,7 @@
 ---
 title: "The Obligation to Perform in a 'Good and Workmanlike Manner'"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Obligation to Perform in a 'Good and Workmanlike Manner'"
   aliases: ["Good and Workmanlike Manner Standard","Workmanship Obligation","Implied Duty of Good Workmanship","Skilled Workmanship Standard"]

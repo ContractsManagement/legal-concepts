@@ -1,7 +1,7 @@
 ---
 title: "The Principles Governing 'Total Cost' Claims"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Principles Governing 'Total Cost' Claims"
   aliases: ["Total Cost Method","Cost Overrun Claims","Modified Total Cost Claims"]

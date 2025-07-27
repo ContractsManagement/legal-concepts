@@ -1,7 +1,7 @@
 ---
 title: "The Doctrine of Privity of Contract and its Statutory Exceptions"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Doctrine of Privity of Contract and its Statutory Exceptions"
   aliases: ["Privity of Contract","Third Party Rights","Contracts (Rights of Third Parties) Act","Privity Exceptions"]

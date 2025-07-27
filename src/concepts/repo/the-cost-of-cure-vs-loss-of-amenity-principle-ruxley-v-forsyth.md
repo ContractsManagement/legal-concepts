@@ -1,7 +1,7 @@
 ---
 title: "The 'Cost of Cure' vs. 'Loss of Amenity' Principle (Ruxley v Forsyth)"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The 'Cost of Cure' vs. 'Loss of Amenity' Principle (Ruxley v Forsyth)"
   aliases: ["Ruxley Electronics Principle","Reasonable Reinstatement Test","Proportionality in Damages Principle","Consumer Surplus Compensation"]

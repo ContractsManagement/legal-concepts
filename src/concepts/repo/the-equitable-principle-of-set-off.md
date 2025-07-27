@@ -1,7 +1,7 @@
 ---
 title: "The Equitable Principle of Set-Off"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Equitable Principle of Set-Off"
   aliases: ["Contractual Set-Off","Equitable Set-Off","Cross-Claims","Mutual Debts"]

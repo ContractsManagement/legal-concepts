@@ -1,7 +1,7 @@
 ---
 title: "The Doctrine of Unconscionability in Contractual Bargains"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Doctrine of Unconscionability in Contractual Bargains"
   aliases: ["Unconscionability","Unconscionable Bargains","Inequality of Bargaining Power","Unfair Contracts"]

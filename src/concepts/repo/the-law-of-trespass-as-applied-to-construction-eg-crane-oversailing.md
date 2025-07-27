@@ -1,7 +1,7 @@
 ---
 title: "The Law of Trespass as Applied to Construction (e.g., crane oversailing)"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Law of Trespass as Applied to Construction (e.g., crane oversailing)"
   aliases: ["Construction Trespass","Crane Oversailing","Airspace Trespass","Site Boundary Trespass"]

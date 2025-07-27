@@ -1,7 +1,7 @@
 ---
 title: "The Scott v Avery Clause (Arbitration as a Precondition to Litigation)"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Scott v Avery Clause (Arbitration as a Precondition to Litigation)"
   aliases: ["Scott v Avery Clause","Arbitration Precondition","Condition Precedent to Litigation"]

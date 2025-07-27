@@ -1,7 +1,7 @@
 ---
 title: "The Rule in Rylands v Fletcher (Strict Liability)"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Rule in Rylands v Fletcher (Strict Liability)"
   aliases: ["Rylands v Fletcher Rule","Strict Liability for Escape","Non-Natural Use Liability","Escape Doctrine"]

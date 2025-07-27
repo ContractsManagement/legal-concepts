@@ -1,7 +1,7 @@
 ---
 title: "The 'Officious Bystander' Test for Implied Terms"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The 'Officious Bystander' Test for Implied Terms"
   aliases: ["Officious Bystander Test","Business Efficacy Test","Implied Terms Test","Necessity Test"]

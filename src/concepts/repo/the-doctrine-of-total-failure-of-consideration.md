@@ -1,7 +1,7 @@
 ---
 title: "The Doctrine of Total Failure of Consideration"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Doctrine of Total Failure of Consideration"
   aliases: ["Total Failure of Consideration","Failure of Consideration","Restitution","Unjust Enrichment"]

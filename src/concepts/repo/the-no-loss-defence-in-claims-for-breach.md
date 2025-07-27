@@ -1,7 +1,7 @@
 ---
 title: "The 'No Loss' Defence in Claims for Breach"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The 'No Loss' Defence in Claims for Breach"
   aliases: ["No Loss Defence","Nil Damages","Absence of Loss","Betterment Defence"]

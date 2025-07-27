@@ -1,7 +1,7 @@
 ---
 title: "The Legal Status of a Condition Precedent"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Legal Status of a Condition Precedent"
   aliases: ["Condition Precedent","Precedent Condition","Conditional Obligations","Suspensive Conditions"]

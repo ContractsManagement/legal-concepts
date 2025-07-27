@@ -1,7 +1,7 @@
 ---
 title: "The Concept of 'Pay-When-Paid' and its Statutory Prohibition"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Concept of 'Pay-When-Paid' and its Statutory Prohibition"
   aliases: ["Pay-When-Paid","Conditional Payment","Payment Prohibition","Construction Act Payment"]

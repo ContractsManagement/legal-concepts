@@ -1,7 +1,7 @@
 ---
 title: "The Concept of a Non-Delegable Duty of Care"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Concept of a Non-Delegable Duty of Care"
   aliases: ["Non-Delegable Duty of Care","Personal Duty of Care","Woodland v Essex Principle","Duty to Ensure Care is Taken"]

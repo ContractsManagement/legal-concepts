@@ -1,7 +1,7 @@
 ---
 title: "The Law of Nuisance as Applied to Construction Sites (e.g., dust, noise)"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Law of Nuisance as Applied to Construction Sites (e.g., dust, noise)"
   aliases: ["Construction Nuisance","Building Site Nuisance","Temporary Nuisance","Dust and Noise Nuisance"]

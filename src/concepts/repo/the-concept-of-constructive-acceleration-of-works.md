@@ -1,7 +1,7 @@
 ---
 title: "The Concept of Constructive Acceleration of Works"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Concept of Constructive Acceleration of Works"
   aliases: ["Constructive Acceleration","Deemed Acceleration","Implicit Acceleration","Acceleration by Conduct"]

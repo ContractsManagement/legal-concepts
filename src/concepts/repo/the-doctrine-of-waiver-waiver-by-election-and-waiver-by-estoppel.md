@@ -1,7 +1,7 @@
 ---
 title: "The Doctrine of Waiver (Waiver by Election and Waiver by Estoppel)"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Doctrine of Waiver (Waiver by Election and Waiver by Estoppel)"
   aliases: ["Waiver by Election","Waiver by Estoppel","Contractual Waiver","Implied Waiver"]

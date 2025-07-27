@@ -1,7 +1,7 @@
 ---
 title: "The Doctrine of Subrogation in Insurance Matters"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Doctrine of Subrogation in Insurance Matters"
   aliases: ["Insurance Subrogation","Subrogation Rights","Insurer Recovery Rights"]

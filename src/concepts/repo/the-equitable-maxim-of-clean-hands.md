@@ -1,7 +1,7 @@
 ---
 title: "The Equitable Maxim of 'Clean Hands'"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Equitable Maxim of 'Clean Hands'"
   aliases: ["Clean Hands Doctrine","Equitable Clean Hands","Unclean Hands Defence","Equity and Good Conscience"]

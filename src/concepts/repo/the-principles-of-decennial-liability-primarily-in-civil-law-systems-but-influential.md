@@ -1,7 +1,7 @@
 ---
 title: "The Principles of Decennial Liability (primarily in Civil Law systems but influential)"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Principles of Decennial Liability (primarily in Civil Law systems but influential)"
   aliases: ["Decennial Liability","Ten Year Liability","Structural Defects Liability","Long-term Construction Liability"]

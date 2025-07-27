@@ -1,7 +1,7 @@
 ---
 title: "The Doctrine of Vicarious Liability"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Doctrine of Vicarious Liability"
   aliases: ["Respondeat Superior","Imputed Liability","Employer Liability for Employee Acts","Master and Servant Liability"]

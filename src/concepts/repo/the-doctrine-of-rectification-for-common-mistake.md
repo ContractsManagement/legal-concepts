@@ -1,7 +1,7 @@
 ---
 title: "The Doctrine of Rectification for Common Mistake"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Doctrine of Rectification for Common Mistake"
   aliases: ["Rectification","Common Mistake Rectification","Contract Rectification","Mutual Mistake"]

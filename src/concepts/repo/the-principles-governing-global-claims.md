@@ -1,7 +1,7 @@
 ---
 title: "The Principles Governing 'Global Claims'"
 layout: concepts/concepts_item.njk
-permalink: "/concepts/{{ title | slug }}/"
+permalink: "concepts/{{ title | slug }}/"
 concept:
   principleName: "The Principles Governing 'Global Claims'"
   aliases: ["Total Cost Claims","Rolled-Up Claims","Composite Claims","Cumulative Claims"]
