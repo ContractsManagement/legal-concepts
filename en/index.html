@@ -2,17 +2,19 @@
 <html lang="en">
   <head profile="http://www.w3.org/2005/10/profile">
     
-    <title>Home - Construction Contracts Management Concepts</title>
+    <title>Home - Construction Law Concepts Repository</title>
     <meta charset="UTF-8">
-    <meta name="description" content="Fundamenty, Eleventy Starter kit with multilingual support and more.">
-    <meta name="keywords" content="eleventy,ssg,JAMStack,starter">
+    <meta name="description" content="Construction Contracts Management Concepts - A comprehensive legal reference guide covering foundational construction law doctrines and principles.">
+    <meta name="keywords" content="construction law,legal concepts,contracts,legal principles,case law">
     <link rel="icon" type="image/png" href="/legal-concepts/images/logo.ico">
     <link rel="stylesheet" type="text/css" href="/legal-concepts/assets/main.css"/>
     <link href="https://unpkg.com/prismjs@1.21.0/themes/prism-okaidia.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
     <style>
 		.hero {
-      background: linear-gradient(to top, transparent, #1a1a1a38 70%), url(https://cdn.pixabay.com/photo/2016/10/11/21/43/geometric-1732847_1280.jpg) no-repeat center center;
+      background:
+        linear-gradient(to top, transparent, #1a1a1a38 70%),
+        rgba(30, 41, 59, 0.5); /* Add a semi-transparent dark blue/gray BG */
       background-size: cover;
 		}
 	  </style>
@@ -23,7 +25,7 @@
     <div class="pl-4 flex items-center">
       <img src="/legal-concepts/images/logo.png" alt="Logo" class="h-5 mr-1"/>
       <a  href="/legal-concepts/ " class="no-underline hover:no-underline font-extrabold text-xl" >
-        Construction Contracts Management Concepts
+        Construction Law Concepts Repository
       </a>
     </div>
     <div class="block md:hidden pr-4">
@@ -46,8 +48,8 @@
           </li>
         
           <li class="mr-3 py-2 md:py-0" title="">
-            <a href="/legal-concepts/en/products/" class="inline-block py-2 px-2 font-bold no-underline hover:underline hover:bg-primary bg:rounded-md hover:text-white  uppercase">
-              <i class=" fill-current "></i>Products</a>
+            <a href="/legal-concepts/en/concepts/" class="inline-block py-2 px-2 font-bold no-underline hover:underline hover:bg-primary bg:rounded-md hover:text-white  uppercase">
+              <i class=" fill-current "></i>Legal Concepts</a>
           </li>
         
           <li class="mr-3 py-2 md:py-0" title="">
@@ -56,13 +58,8 @@
           </li>
         
           <li class="mr-3 py-2 md:py-0" title="">
-            <a href="https://github.com/creasoft-dev/fundamenty" class="inline-block py-2 px-2 font-bold no-underline hover:underline hover:bg-primary bg:rounded-md hover:text-white  uppercase">
+            <a href="https://github.com/ContractsManagement/legal-concepts" class="inline-block py-2 px-2 font-bold no-underline hover:underline hover:bg-primary bg:rounded-md hover:text-white  uppercase">
               <i class="fab fa-git fill-current "></i></a>
-          </li>
-        
-          <li class="mr-3 py-2 md:py-0" title="">
-            <a href="https://twitter.com/creasoftdev" class="inline-block py-2 px-2 font-bold no-underline hover:underline hover:bg-primary bg:rounded-md hover:text-white  uppercase">
-              <i class="fab fa-twitter fill-current "></i></a>
           </li>
         
       </ul>
@@ -85,9 +82,9 @@
     <div class="w-full flex mx-auto hero">
       <div id="hero" class="mt-24 container px-3 mx-auto flex flex-wrap flex-col md:flex-row items-center">
         <div id="hero-label" class="flex flex-col w-full md:w-3/5 justify-center items-start text-center md:text-left">
-          <span class="text-4xl text-white">SSG with batteries included</span>
+          <span class="text-4xl text-white">Comprehensive Legal Concepts Catalog</span>
           <div class="block my-2 ">
-            <a href="/legal-concepts/en" class="text-base text-white border-2 border-white hover:bg-primary p-2 rounded-lg no-underline hover:text-white">Contact Us</a>
+            <a href="/legal-concepts/en/concepts/" class="text-base text-white border-2 border-white hover:bg-primary p-2 rounded-lg no-underline hover:text-white">Browse Legal Concepts</a>
           </div>
         </div>
         <div id="hero-visual" class="w-full md:w-2/5 py-6 text-center">
@@ -100,50 +97,12 @@
 
     <div class="container w-full flex flex-wrap mx-auto px-2 pt-8 ">
       <div class="content w-full text-gray-700  p-2">
-        <div
-    style="background-image:
-           url('/legal-concepts/images/background.jpg');
-    height:200px;
-    background-size: 100%;
-    background-position:center;">&nbsp;</div>
-<h1>Build your own JAMStack site!</h1>
-<p>The world is waiting for you to share your knowledge!</p>
-<h2>Fundamenty, the fundamental Eleventy starter project</h2>
-<p>Just clone the <a href="https://github.com/creasoft-dev/fundamenty">repo</a>, and run
-<code>$yarn serve</code></p>
-<h3>The project includes following features:</h3>
-<ul>
-<li>Multi-language support (based on folder structure)</li>
-<li>Syntax highlighting with <a href="https://prismjs.com/">Prism</a></li>
-<li>Integration with <a href="https://www.algolia.com/">Algolia</a> (autocomplete search box)</li>
-<li><a href="https://analytics.google.com/">Google Analytics</a></li>
-<li>Edit on GitLab / GitHub</li>
-<li>Generation of <code>robots.txt</code> and <code>sitemap.xml</code> files for SEO</li>
-<li>Auto deploy in Github using <a href="https://docs.github.com/en/actions">GitHub Actions</a> script to deploy on GitHub Pages</li>
-<li>Auto deploy in GitLab using GitLab-CI</li>
-<li>CLI tool to initialize site and generate skeleton content file</li>
-</ul>
-<h3>Themes</h3>
-<p>A theme is a collection of templates (under the <code>_includes</code> folder) that generates a specific type of content.  An example is the <strong>Technology Radar</strong>, which renders a page for the radar and a page for each of the blips.</p>
-<ul>
-<li><a href="https://www.thoughtworks.com/radar">Technology Radar</a>. For more detail see <a href="./src/_includes/radar/">./src/_includes/radar/</a>. See live sample: <a href="/legal-concepts/en/radar/">/en/radar/</a></li>
-<li><strong>(NEW)</strong> Product Catalog - Catalog of products, with search. See live sample: <a href="/legal-concepts/en/products/">/en/products/</a></li>
-<li><strong>(NEW)</strong> API Browser - OpenAPI browser, based on Swagger UI. See live sample: <a href="/legal-concepts/en/apibro/">/en/apibro/</a></li>
-</ul>
-<h3>The project uses</h3>
-<ul>
-<li><a href="https://tailwindcss.com/">TailwindCSS</a></li>
-<li><a href="https://webpack.js.org/">Webpack</a></li>
-<li><a href="https://github.com/postcss/postcss-loader">postcss-loader</a></li>
-<li><a href="https://github.com/motdotla/dotenv">dotenv</a></li>
-</ul>
-<h3>Credits</h3>
-<ul>
-<li>Initial project setup <a href="https://statickit.com/guides/eleventy-webpack">Eleventy+Webpack</a> and <a href="https://statickit.com/guides/eleventy-tailwind">Eleventy+Tailwind</a> from statickit.com.</li>
-<li>Theme based on <a href="https://github.com/tailwindtoolbox/Help-Article">Tailwind Help-Article</a> from tailwindtoolbox</li>
-<li>Multilingual based on <a href="https://www.webstoemp.com/blog/multilingual-sites-eleventy/">this article</a> by Jérôme Coupé.</li>
-<li>Integration with Algolia based on <a href="https://www.raymondcamden.com/2020/06/24/adding-algolia-search-to-eleventy-and-netlify">this article</a> and <a href="https://www.raymondcamden.com/2020/07/01/adding-algolia-search-to-eleventy-and-netlify-part-two">this other</a></li>
-</ul>
+        <h2>Construction Law Concepts Repository</h2>
+<p>Explore comprehensive analysis of construction law principles and doctrines.</p>
+<h3>Comprehensive Analysis of Construction Law Principles</h3>
+<p>A complete legal reference guide covering 31 foundational construction law doctrines and principles</p>
+<p><strong>Jurisdiction:</strong> England &amp; Wales (with comparative notes where applicable)</p>
+<p><a href="/en/concepts/">Browse 31 Legal Concepts</a></p>
 
       </div>
 
@@ -152,9 +111,9 @@
         
           <article>
             <div>
-              <a href="/legal-concepts/en/posts/2020-07-10-first-post/">My First Post</a>
+              <a href="/legal-concepts/en/posts/2025-07-27-welcome/">Welcome to the Construction Law Concepts Repository</a>
             </div>
-            Jul 10, 2020
+            Jul 27, 2025
           </article>
         
       </div>
@@ -167,14 +126,99 @@
       
     </div>
 
-    <footer class="w-full bg-gray-100 mt-6 p-2 border-t-1 border-gray-300">
-  <div class="w-full container mx-auto flex flex-col items-center justify-center text-sm text-gray-600">
-    <div class="block">
-      Construction Contracts Management Concepts.
+    <footer class="w-full bg-gray-100 mt-6 p-6 border-t-1 border-gray-300">
+  <div class="w-full container mx-auto">
+    <!-- Main Footer Content -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-6">
+      
+      <!-- Site Info Column -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-semibold text-gray-800">Construction Law Concepts Repository</h3>
+        <p class="text-sm text-gray-600">A comprehensive legal reference guide covering foundational construction law doctrines and principles from England & Wales.</p>
+        <div class="flex space-x-4">
+          <!-- Social Links -->
+          <a href="https://github.com/ContractsManagement/legal-concepts" class="text-gray-600 hover:text-gray-800" title="GitHub">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a href="https://twitter.com/creasoftdev" class="text-gray-600 hover:text-gray-800" title="Twitter">
+            <i class="fab fa-twitter text-xl"></i>
+          </a>
+          <a href="/rss.xml" class="text-gray-600 hover:text-gray-800" title="RSS Feed">
+            <i class="fas fa-rss text-xl"></i>
+          </a>
+          <!-- Placeholder for LinkedIn -->
+          <a href="#" class="text-gray-400 hover:text-gray-600" title="LinkedIn (Coming Soon)">
+            <i class="fab fa-linkedin text-xl"></i>
+          </a>
+          <!-- Placeholder for YouTube -->
+          <a href="#" class="text-gray-400 hover:text-gray-600" title="YouTube (Coming Soon)">
+            <i class="fab fa-youtube text-xl"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links Column -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-semibold text-gray-800">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/en/pages/about/" class="text-gray-600 hover:text-gray-800 hover:underline">About</a></li>
+          <li><a href="/en/concepts/" class="text-gray-600 hover:text-gray-800 hover:underline">Legal Concepts</a></li>
+          <li><a href="/en/pages/articles/" class="text-gray-600 hover:text-gray-800 hover:underline">Articles</a></li>
+          <li><a href="/en/pages/search/" class="text-gray-600 hover:text-gray-800 hover:underline">Search</a></li>
+          <!-- Placeholder Links -->
+          <li><a href="#" class="text-gray-400 hover:text-gray-600 hover:underline">Case Law Database (Coming Soon)</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-gray-600 hover:underline">Newsletter (Coming Soon)</a></li>
+        </ul>
+      </div>
+
+      <!-- API & Resources Column -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-semibold text-gray-800">API & Resources</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/api/concepts.json" class="text-gray-600 hover:text-gray-800 hover:underline">Concepts API</a></li>
+          <li><a href="/api/pages.json" class="text-gray-600 hover:text-gray-800 hover:underline">Pages API</a></li>
+          <li><a href="/api/posts.json" class="text-gray-600 hover:text-gray-800 hover:underline">Posts API</a></li>
+          <li><a href="/rss.xml" class="text-gray-600 hover:text-gray-800 hover:underline">RSS Feed</a></li>
+          <li><a href="/sitemap.xml" class="text-gray-600 hover:text-gray-800 hover:underline">Sitemap</a></li>
+          <li><a href="/robots.txt" class="text-gray-600 hover:text-gray-800 hover:underline">Robots.txt</a></li>
+          <!-- Placeholder API Links -->
+          <li><a href="#" class="text-gray-400 hover:text-gray-600 hover:underline">GraphQL API (Coming Soon)</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-gray-600 hover:underline">OpenAPI Docs (Coming Soon)</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal & Support Column -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-semibold text-gray-800">Legal & Support</h3>
+        <ul class="space-y-2 text-sm">
+          <!-- Placeholder Legal Links -->
+          <li><a href="#" class="text-gray-400 hover:text-gray-600 hover:underline">Privacy Policy (Coming Soon)</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-gray-600 hover:underline">Terms of Use (Coming Soon)</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-gray-600 hover:underline">Legal Disclaimer (Coming Soon)</a></li>
+          <li><a href="https://github.com/ContractsManagement/legal-concepts" class="text-gray-400 hover:text-gray-600 hover:underline">Contact Us</a></li>
+          <li><a href="https://github.com/ContractsManagement/legal-concepts/issues/new" class="text-gray-400 hover:text-gray-600 hover:underline">Support Forum</a></li>
+          <li><a href="https://github.com/ContractsManagement/legal-concepts/blob/main/CONTRIBUTING.md" class="text-gray-400 hover:text-gray-600 hover:underline">Contribute</a></li>
+        </ul>
+        <div class="pt-2">
+          <p class="text-xs text-gray-500">
+            <strong>Disclaimer:</strong> For educational purposes only. Not legal advice.
+          </p>
+        </div>
+      </div>
     </div>
-    <div>
-      Site generated on Jul 27, 2025. Site generator based on <a href="https://github.com/creasoft-dev/fundamenty">Fundamenty</a> by <a href="https://creasoft.dev/">CreaSoft.dev</a>.
-      Powered by <a href="https://www.11ty.dev/" >Eleventy</a>
+
+    <!-- Footer Bottom -->
+    <div class="border-t border-gray-300 pt-4">
+      <div class="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+        <div class="text-sm text-gray-600">
+          Site generated on Jul 27, 2025. 
+          Site generator based on <a href="https://github.com/creasoft-dev/fundamenty" class="hover:underline">Fundamenty</a> by <a href="https://creasoft.dev/" class="hover:underline">CreaSoft.dev</a>.
+          Powered by <a href="https://www.11ty.dev/" class="hover:underline">Eleventy</a>.
+        </div>
+        <div class="text-sm text-gray-600">
+          © 2025 Construction Law Concepts Repository. <a href="https://creativecommons.org/licenses/by-sa/4.0/">(CC BY-SA 4.0) license</a>.
+        </div>
+      </div>
     </div>
   </div>
 </footer>
