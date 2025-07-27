@@ -2,28 +2,28 @@
   
     {
       "title": "About",
-      "lang": "en",
+      "lang": "",
       "tags": "page",
-      "url": "/en/pages/about/",
-      "objectID": "/en/pages/about/",
+      "url": "/pages/about/",
+      "objectID": "/pages/about/",
       "content": "&quot;Construction Law Concepts Repository&#92;nExplore comprehensive analysis of construction law principles and doctrines.&#92;n&quot;"
     },
   
     {
       "title": "Articles",
-      "lang": "en",
+      "lang": "",
       "tags": "page",
-      "url": "/en/pages/articles/",
-      "objectID": "/en/pages/articles/",
+      "url": "/pages/articles/",
+      "objectID": "/pages/articles/",
       "content": "&quot;&quot;"
     },
   
     {
       "title": "Search",
-      "lang": "en",
+      "lang": "",
       "tags": "page",
-      "url": "/en/pages/search/",
-      "objectID": "/en/pages/search/",
+      "url": "/pages/search/",
+      "objectID": "/pages/search/",
       "content": "&quot;&#92;n  &#92;n&#92;n&quot;"
     }
   

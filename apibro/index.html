@@ -2,9 +2,9 @@
 <html lang="en">
   <head profile="http://www.w3.org/2005/10/profile">
     
-    <title> - Construction Law Concepts Repository</title>
+    <title>API Browser - Construction Law Concepts Repository</title>
     <meta charset="UTF-8">
-    <meta name="description" content="">
+    <meta name="description" content="API list">
     <meta name="keywords" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
@@ -79,9 +79,87 @@
     <div class="container w-full flex flex-wrap mx-auto px-2 pt-8 lg:pt-16 mt-16">
       <div class="content w-full">
         
-<div class="container">
-
+<div><h1>API</h1>
+<p>API plays a central role in application development lifecycle. It impacts delivery cycle and software quality. Proper API management can increase the agility of engineering team, and in larger scope, the business.</p>
+<p>The API directory maintains a catalog of APIs of services. The APIs are defined using  OpenAPI v3 specification.</p>
+<p>You can leverage the API definitions with various <a href="https://openapi.tools/">tools</a> in the ecosystem to generate stubs, mock servers, validators, and more.</p>
 </div>
+
+<h2>Directory</h2>
+<table id="apispec-items" class="table-auto" >
+    <thead class="bg-gray-200">
+        <tr class="text-sm">
+            <th onClick="sortTable('apispec-items', 0)">Domain</th>
+            <th onClick="sortTable('apispec-items', 1)">Name</th>
+            <th>Doc Page</th>
+            <th>Description</th>
+        </tr>
+    </thead>
+    <tbody>
+    
+      
+        <tr class="text-sm">
+            <td>Library</td>
+            <td>Book Manager (WIP)</td>
+            <td>
+            
+            <a href="./apiswagger/?source=/legal-concepts/apispecs/am-title_manager.yml">
+            Swagger</a>
+            </td>
+            <td>Title Management API</td>
+        </tr>
+    
+    </tbody>
+</table>
+
+<br /><hr />
+
+<a href="https://github.com/ContractsManagement/legal-concepts.git/edit/main/src/apibro/index.json"> the manifest file.</a>
+
+<blockquote class="text-sm"> NOTE: In order for the change in the spec source or the manifest above to be reflected,
+you need to process it manually:
+<p>1. From the repo, run the cli tool: <code>$yarn fun-apibro</code>
+<br/>2. Push the repo to gitlab. And wait until GitLab CI complets deployment</p>
+</blockquote>
+
+
+<script>
+function sortTable(tableId, colNum) {
+  var table, rows, switching, i, x, y, shouldSwitch;
+  table = document.getElementById(tableId);
+  switching = true;
+  /* Make a loop that will continue until
+  no switching has been done: */
+  while (switching) {
+    // Start by saying: no switching is done:
+    switching = false;
+    rows = table.rows;
+    /* Loop through all table rows (except the
+    first, which contains table headers): */
+    for (i = 1; i < (rows.length - 1); i++) {
+      // Start by saying there should be no switching:
+      shouldSwitch = false;
+      /* Get the two elements you want to compare,
+      one from current row and one from the next: */
+      x = rows[i].getElementsByTagName("TD")[colNum];
+      y = rows[i + 1].getElementsByTagName("TD")[colNum];
+      // Check if the two rows should switch place:
+      if (x.innerText.toLowerCase() > y.innerText.toLowerCase()) {
+        // If so, mark as a switch and break the loop:
+        shouldSwitch = true;
+        break;
+      }
+    }
+    if (shouldSwitch) {
+      /* If a switch has been marked, make the switch
+      and mark that a switch has been done: */
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);
+      switching = true;
+    }
+  }
+}
+
+</script>
 
       </div>
       
