@@ -26,4 +26,4 @@ Explore comprehensive analysis of construction law principles and doctrines.
 
 **Jurisdiction:** {{ legal_concepts.jurisdiction }}
 
-[Browse {{ legal_concepts.principles | size }} Legal Concepts](/en/concepts/)
+[Browse {{ legal_concepts.principles | size }} Legal Concepts]({{ hero_button_link | url}})

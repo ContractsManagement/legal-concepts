@@ -7,8 +7,6 @@ Construction Law Concepts Repository - A comprehensive legal reference guide cov
 
 A theme is a collection of templates (under the `_includes` folder) that generates a specific type of content. An example is the **Technology Radar**, which renders a page for the radar and a page for each of the blips.
 
-- [Technology Radar](https://www.thoughtworks.com/radar). For more detail see [./src/\_includes/radar/](./src/_includes/radar/)
-- **(NEW)** Product Catalog - Catalog of products, with search.
 - **(NEW)** API Browser - OpenAPI browser, based on Swagger UI.
 
 I am changing the template from products to legal concepts.
@@ -29,7 +27,7 @@ Revise this site content under `./src` as you go.
 │   ├ {lang}.json - Common front matter for all the contents in Spanish
 │   ├── pages     - Site pages
 │   ├── posts     - Site posts (e.g. blog articles)
-│   ├── products  - Product catalog
+│   ├── concepts  - concept catalog
 │   └── radar     - (Technology) Radar
 ├───images        - Images
 ├───scripts
@@ -41,7 +39,7 @@ Revise this site content under `./src` as you go.
 │   ├──l10n       - localization resource bundles
 └───_includes     - Eleventy's inclusion files, as specified in the front matter
     ├─ apibrowser - API spec (Swagger) browser
-    ├─ products   - Product Catalog layout (Architecture Repository)
+    ├─ concepts   - concept Catalog layout (Architecture Repository)
     ├─ layout     - Default layouts
     └─radar       - Technology Radar layout
 ```

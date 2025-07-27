@@ -115,7 +115,7 @@
       "isPartOf": {
         "@type": "CreativeWorkSeries",
         "name": "Legal Concepts Repository",
-        "url": "{{ site.rootUrl }}/en/concepts/"
+        "url": "{{ site.rootUrl }}/concepts/"
       }
     }
     </script>
@@ -163,12 +163,12 @@
     {% endif %}
     
     <!-- Enhanced SEO Meta Tags for Concepts Portal -->
-    {% if legal_concepts and page.url == '/en/concepts/' %}
+    {% if legal_concepts and page.url == '/concepts/' %}
     <!-- Open Graph Meta Tags -->
     <meta property="og:title" content="Legal Concepts Catalog - {{ site.name }}">
     <meta property="og:description" content="{{ legal_concepts.description }}">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="{{ site.rootUrl }}/en/concepts/">
+    <meta property="og:url" content="{{ site.rootUrl }}/concepts/">
     <meta property="og:site_name" content="{{ site.name }}">
 
     <!-- Twitter Card -->
@@ -183,7 +183,7 @@
       "@type": "CollectionPage",
       "name": "Legal Concepts Catalog",
       "description": "{{ legal_concepts.description }}",
-      "url": "{{ site.rootUrl }}/en/concepts/",
+      "url": "{{ site.rootUrl }}/concepts/",
       "publisher": {
         "@type": "Organization",
         "name": "{{ site.name }}",
@@ -201,7 +201,7 @@
             "position": {{ loop.index }},
             "item": {
               "@type": "Article",
-              "@id": "{{ site.rootUrl }}/en/concepts/{{ concept.principleName | slug }}/",
+              "@id": "{{ site.rootUrl }}/concepts/{{ concept.principleName | slug }}/",
               "name": "{{ concept.principleName }}",
               "description": "{{ concept.coreConcept.elevatorPitch }}",
               "genre": "Legal Education",
@@ -232,13 +232,13 @@
             "@type": "ListItem",
             "position": 2,
             "name": "Legal Concepts",
-            "item": "{{ site.rootUrl }}/en/concepts/"
+            "item": "{{ site.rootUrl }}/concepts/"
           }
         ]
       },
       "potentialAction": {
         "@type": "SearchAction",
-        "target": "{{ site.rootUrl }}/en/concepts/?search={search_term_string}",
+        "target": "{{ site.rootUrl }}/concepts/?search={search_term_string}",
         "query-input": "required name=search_term_string"
       }
     }
