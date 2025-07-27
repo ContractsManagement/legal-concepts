@@ -18,7 +18,7 @@ keywords: "legal concepts, construction law, {{ legal_concepts.jurisdiction }}, 
     {% for concept in legal_concepts.principles %}
         <div class="concept-card bg-white p-4 border border-gray-200 rounded-lg shadow hover:shadow-md transition-shadow">
             <h4 class="text-lg font-semibold text-blue-600 mb-2">
-                <a href="/concepts/{{ concept.principleName | slug }}/" class="hover:underline">
+                <a href="{{ concept.principleName | slug }}/" class="hover:underline">
                     {{ concept.principleName }}
                 </a>
             </h4>
