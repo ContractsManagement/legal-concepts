@@ -4,7 +4,7 @@ const webpack = require('webpack');
 
 const path = require('path');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
-const VueLoaderPlugin = require('vue-loader/lib/plugin');
+const { VueLoaderPlugin } = require('vue-loader');
 
 module.exports = {
   entry: './src/scripts/main.js',
@@ -22,12 +22,12 @@ module.exports = {
       Buffer: ['buffer', 'Buffer'],
       process: 'process/browser',
     }),
-    // new VueLoaderPlugin()
+    new VueLoaderPlugin(),
   ],
   resolve: {
     extensions: ['*', '.js', '.jsx'],
     alias: {
-      'vue$': 'vue/dist/vue.esm.js' // 'vue/dist/vue.common.js' for webpack 1
+      'vue$': 'vue/dist/vue.esm-bundler.js'
     },
     fallback: {
       "url": require.resolve("url/"),
@@ -43,7 +43,6 @@ module.exports = {
       "process": require.resolve("process/browser"),
       "util": require.resolve("util"),
       "path": require.resolve("path-browserify"),
-      "querystring": require.resolve("querystring"),
       "os": require.resolve("os-browserify/browser"),
       "fs": false,
       "net": false,

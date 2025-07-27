@@ -1,8 +1,8 @@
 {
     "repoUrl": "https://github.com/ContractsManagement/legal-concepts.git",
     "repoDefaultBranch": "main",
-    "rootUrl": "https://contractsmanagement.github.io/legal-topics/",
-    "name": "Construction Contracts Management Concepts",
+    "rootUrl": "https://contractsmanagement.github.io/legal-concepts",
+    "name": "Construction Law Concepts Repository",
     "logoUrl": "/images/logo.png",
     "faviconUrl": "/images/logo.ico",
     "googleTagId": "",

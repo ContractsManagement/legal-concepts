@@ -1,0 +1,109 @@
+---
+permalink: /rss.xml
+eleventyExcludeFromCollections: true
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{{ site.name }} - Legal Concepts & Articles Feed</title>
+    <description>{{ legal_concepts.description }} - Including articles, posts, and legal concept updates</description>
+    <link>{{ site.rootUrl }}</link>
+    <atom:link href="{{ site.rootUrl }}/rss.xml" rel="self" type="application/rss+xml"/>
+    <language>en-us</language>
+    <managingEditor>legal@contractsmanagement.com (Legal Concepts Team)</managingEditor>
+    <webMaster>tech@contractsmanagement.com (Tech Team)</webMaster>
+    <lastBuildDate>{{ site.buildTime | dateIso }}</lastBuildDate>
+    <category>Legal</category>
+    <category>Construction Law</category>
+    <category>Legal Education</category>
+    <generator>Eleventy</generator>
+    <docs>https://www.rssboard.org/rss-specification</docs>
+    <ttl>1440</ttl>
+
+    {% for post in collections.post %}
+    <item>
+      <title>{{ post.data.title | escape }}</title>
+      <description><![CDATA[{{ post.templateContent }}]]></description>
+      <pubDate>{{ post.data.date | dateRss }}</pubDate>
+      <link>{{ site.rootUrl }}{{ post.url }}</link>
+      <guid isPermaLink="false">{{ site.rootUrl }}{{ post.url }}</guid>
+      {% if post.data.author %}
+      <author>{{ post.data.author }}</author>
+      {% endif %}
+      {% if post.data.tags %}
+      {% for tag in post.data.tags %}
+      {% if tag != "post" %}
+      <category>{{ tag }}</category>
+      {% endif %}
+      {% endfor %}
+      {% endif %}
+    </item>
+    {% endfor %}
+
+    {% for concept in legal_concepts.principles %}
+    <item>
+      <title>{{ concept.principleName | escape }}</title>
+      <description><![CDATA[
+        <p><strong>{{ concept.principleName }}</strong></p>
+        {% if concept.aliases and concept.aliases.length > 0 %}
+        <p><em>Also known as: {{ concept.aliases | join(", ") }}</em></p>
+        {% endif %}
+        <p><strong>Field of Law:</strong> {{ concept.fieldOfLaw }}</p>
+        <p><strong>Jurisdiction:</strong> {{ concept.primaryJurisdiction }}</p>
+        
+        <h3>Core Concept</h3>
+        <p>{{ concept.coreConcept.elevatorPitch }}</p>
+        
+        <h3>Underlying Rationale</h3>
+        <p>{{ concept.coreConcept.underlyingRationale }}</p>
+        
+        {% if concept.discovery.origin.landmarkCase %}
+        <h3>Landmark Case</h3>
+        <p><strong>{{ concept.discovery.origin.landmarkCase }}</strong></p>
+        <p>{{ concept.discovery.origin.summary }}</p>
+        {% endif %}
+        
+        {% if concept.deconstruction.essentialElementsTest and concept.deconstruction.essentialElementsTest.length > 0 %}
+        <h3>Essential Elements</h3>
+        <ul>
+        {% for element in concept.deconstruction.essentialElementsTest %}
+          <li><strong>{{ element.element }}:</strong> {{ element.description }}</li>
+        {% endfor %}
+        </ul>
+        {% endif %}
+      ]]></description>
+      <link>{{ site.rootUrl }}/en/concepts/{{ concept.principleName | slug }}/</link>
+      <guid isPermaLink="true">{{ site.rootUrl }}/en/concepts/{{ concept.principleName | slug }}/</guid>
+      <category>{{ concept.fieldOfLaw }}</category>
+      <category>{{ concept.primaryJurisdiction }}</category>
+      {% if concept.discovery.origin.type %}
+      <category>{{ concept.discovery.origin.type }}</category>
+      {% endif %}
+      <pubDate>{{ site.buildTime | dateIso }}</pubDate>
+      <author>legal@contractsmanagement.com (Legal Concepts Team)</author>
+    </item>
+    {% endfor %}
+
+    {% for post in collections.post | reverse %}
+    <item>
+      <title>{{ post.data.title | escape }}</title>
+      <description><![CDATA[{{ post.templateContent | safe }}]]></description>
+      <link>{{ site.rootUrl }}{{ post.url }}</link>
+      <guid isPermaLink="true">{{ site.rootUrl }}{{ post.url }}</guid>
+      <category>Blog</category>
+      <category>Legal Articles</category>
+      {% if post.data.tags %}
+        {% for tag in post.data.tags %}
+          {% if tag != "post" %}
+      <category>{{ tag }}</category>
+          {% endif %}
+        {% endfor %}
+      {% endif %}
+      <pubDate>{{ post.data.date | dateIso }}</pubDate>
+      {% if post.data.author %}
+      <author>legal@contractsmanagement.com ({{ post.data.author }})</author>
+      {% endif %}
+    </item>
+    {% endfor %}
+  </channel>
+</rss>

@@ -31,7 +31,7 @@ const META = {
       "-f, --flatten", // flatten the object prior indexing
       "-i, --input <input>", // Input file override
       "-n, --index <indexname>" // ElasticSearch's index name
-    ], 
+    ],
   },
 };
 
@@ -93,9 +93,9 @@ async function pushToIndex(client, indexName, dataFilePaths, flatten) {
     const json = utils.readJson(dataFilePath);
 
     utils.logger.info(
-      `Indexing ${json.length} ${flatten ? 'flattened': ''} objs from [${dataFilePath}] to [es:${indexName}]...`
+      `Indexing ${json.length} ${flatten ? 'flattened' : ''} objs from [${dataFilePath}] to [es:${indexName}]...`
     );
-    
+
     let ctr = 0;
     for (jsonObj of json) {
       try {
@@ -132,7 +132,7 @@ async function run(config, context) {
   utils.logger.info(`Executing ${META.name} (%j)`, params);
 
   const accessString = (ES_ADMIN_ACCESS_KEY) ? `${ES_ADMIN_ACCESS_KEY}:${ES_ADMIN_ACCESS_SECRET}@` : '';
-  const esUrl =  `https://${accessString}${ES_URL}`;
+  const esUrl = `https://${accessString}${ES_URL}`;
   const indexName = params.index || ES_INDEX_NAME;
   utils.logger.info(`Connecting to ES node: ${esUrl}`);
 
@@ -149,9 +149,8 @@ async function run(config, context) {
   } else if (params.action === "index") {
     let inputFiles = (params.input) ? params.input.split(',')
       : inputFiles = [`${API_PATH}/pages.json`,
-        `${API_PATH}/posts.json`,
-        `${API_PATH}/radar.json`,
-        `${API_PATH}/products.json`];
+      `${API_PATH}/posts.json`,
+      `${API_PATH}/concepts.json`];
     await pushToIndex(client, indexName, inputFiles, params.flatten);
   }
 }

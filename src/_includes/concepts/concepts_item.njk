@@ -1,126 +1,124 @@
 ---
 layout: concepts/concepts_base.njk
+description: "{{ concept.coreConcept.elevatorPitch }}"
+keywords: "{{ concept.principleName }}, {% if concept.aliases %}{{ concept.aliases | join(', ') }}, {% endif %}{{ concept.fieldOfLaw }}, {{ concept.primaryJurisdiction }}, construction law, legal concept"
 ---
-<p class="content-center text-sm text-gray-600">{{ site[locale]._t.updated_on }}: {{ meta.update  | formatDate("DD", locale) }}, {{ site[locale]._t.by }}  {{ meta.author }}</p>
 
-{% if imageUrl %}
-<div class="w-auto">
-        <div class="h-64" style="background-image:
-            url('{{ imageUrl | url }}');
-        width:100%;
-        background-repeat: no-repeat;
-        background-position:center;
-        background-size: cover">&nbsp;</div>
-    {% if imageCredits %}
-<div class="text-xs text-gray-600">{{ imageCredits | safe }}</div>
-    {% endif %}
-</div>
-{% endif %}
-
-<div>
-    <div class="float-right ml-4 my-2 bg-indigo-100 p-2">
-        {% if meta.logo %}
-        {% set conceptLogUrl = '/images/concepts/' + meta.logo %}
-        <img src="{{ conceptLogUrl | url }}" class="h-7" />
-        {% endif %}
-        <h4>concept Brief</h4>
-        <table class="text-sm bg-white w-96">
-            <tbody>
-                <tr>
-                    <td class="w-40">Phase</td>
-                    <td>{{ concept.phase }}</td>
-                </tr>
-                <tr>
-                    <td>Site</td>
-                    <td><a href="{{ links.homepage }}">Link</a></td>
-                </tr>
-                <tr>
-                    <td>Business Func</td>
-                    <td>{{ concept.businessFunction }}</td>
-                </tr>
-                <tr>
-                    <td>Team Lead</td>
-                    <td>{{ concept.teamLead }}</td>
-                </tr>
-                <tr>
-                    <td>Tech Lead</td>
-                    <td>{{ concept.techLead }}</td>
-                </tr>
-            </tbody>
-        </table>
-        <h4>Links</h4>
-        <table class="text-sm bg-white w-96">
-            <tbody>
-                <tr>
-                    <td class="w-40">Repo</td>
-                    <td><a href="{{ links.repo }}">Link</a></td>
-                </tr>
-                <tr>
-                    <td>Env (Stage)</td>
-                    <td>{% if links.envs.stage %}<a href="{{ links.envs.stage }}">Link</a>{% endif %}</td>
-                </tr>
-                <tr>
-                    <td>Log Browser</td>
-                    <td>{% if links.logBrowser %}<a href="{{ links.logBrowser }}">Link</a>{% endif %}</td>
-                </tr>
-                <tr>
-                    <td>APM</td>
-                    <td>{% if links.observability.app %}<a href="{{ links.observability.app }}">Link</a>{% endif %}</td>
-                </tr>
-            </tbody>
-        </table>
-        <h4>Technical Brief</h4>
-        <table class="text-xs bg-white">
-            <tbody>
-                <tr>
-                    <td>Arch Drivers</td>
-                    <td>{{ technical.architecturalDrivers }}</td>
-                </tr>
-                <tr>
-                    <td>Cloud Provider</td>
-                    <td>{{ technical.cloudProvider }}</td>
-                </tr>
-                <tr>
-                    <td>Container Orch.</td>
-                    <td>{{ technical.containerOrchestrator }}</td>
-                </tr>
-                <tr>
-                    <td>Prog Langs</td>
-                    <td>{{ technical.progLanguages }}</td>
-                </tr>
-                <tr>
-                    <td>Tech Stack</td>
-                    <td>{{ technical.techStack }}</td>
-                </tr>
-                <tr>
-                    <td>Archi Styles</td>
-                    <td>{{ technical.archiStyles }}</td>
-                </tr>
-                <tr>
-                    <td>Shared Servs</td>
-                    <td>{{ technical.sharedServices }}</td>
-                </tr>
-                <tr>
-                    <td>CI / CD</td>
-                    <td>{{ technical.ci }} / {{ technical.cd }}</td>
-                </tr>
-                <tr>
-                    <td>Security</td>
-                    <td>{{ technical.security }}</td>
-                </tr>
-                <tr>
-                    <td>Observability</td>
-                    <td>{{ technical.observability }}</td>
-                </tr>
-            </tbody>
-        </table>
+<div class="max-w-4xl mx-auto">
+    <div class="mb-6">
+        <a href="/en/concepts/" class="text-blue-600 hover:underline">&larr; Back to Legal Concepts</a>
     </div>
+
+    <article class="bg-white rounded-lg shadow-lg p-8">
+        <header class="mb-8">
+            <h1 class="text-3xl font-bold text-gray-900 mb-4">{{ concept.principleName }}</h1>
+            
+            {% if concept.aliases and concept.aliases.length > 0 %}
+            <div class="mb-4">
+                <h3 class="text-lg font-semibold text-gray-700 mb-2">Also Known As:</h3>
+                <ul class="list-disc list-inside text-gray-600">
+                    {% for alias in concept.aliases %}
+                    <li>{{ alias }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            {% endif %}
+            
+            <div class="grid md:grid-cols-2 gap-4 mb-6">
+                <div class="bg-blue-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-blue-800 mb-2">Jurisdiction</h3>
+                    <p class="text-blue-700">{{ concept.primaryJurisdiction }}</p>
+                </div>
+                <div class="bg-green-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-green-800 mb-2">Field of Law</h3>
+                    <p class="text-green-700">{{ concept.fieldOfLaw }}</p>
+                </div>
+            </div>
+        </header>
+
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Core Concept</h2>
+            
+            <div class="bg-yellow-50 border-l-4 border-yellow-400 p-6 mb-6">
+                <h3 class="text-lg font-semibold text-yellow-800 mb-2">Summary</h3>
+                <p class="text-yellow-700">{{ concept.coreConcept.elevatorPitch }}</p>
+            </div>
+            
+            <div class="prose max-w-none">
+                <h3 class="text-lg font-semibold text-gray-800 mb-3">Underlying Rationale</h3>
+                <p class="text-gray-700 leading-relaxed">{{ concept.coreConcept.underlyingRationale }}</p>
+            </div>
+        </section>
+
+        {% if concept.discovery %}
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Legal Development</h2>
+            
+            {% if concept.discovery.origin %}
+            <div class="bg-gray-50 p-6 rounded-lg mb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-3">Origin</h3>
+                <div class="mb-3">
+                    <strong class="text-gray-700">Type:</strong> 
+                    <span class="text-gray-600">{{ concept.discovery.origin.type }}</span>
+                </div>
+                {% if concept.discovery.origin.landmarkCase %}
+                <div class="mb-3">
+                    <strong class="text-gray-700">Landmark Case:</strong> 
+                    <span class="text-gray-600">{{ concept.discovery.origin.landmarkCase }}</span>
+                </div>
+                {% endif %}
+                {% if concept.discovery.origin.summary %}
+                <p class="text-gray-700">{{ concept.discovery.origin.summary }}</p>
+                {% endif %}
+            </div>
+            {% endif %}
+            
+            {% if concept.discovery.evolution and concept.discovery.evolution.length > 0 %}
+            <div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-4">Evolution Through Case Law</h3>
+                <div class="space-y-4">
+                    {% for case in concept.discovery.evolution %}
+                    <div class="border-l-4 border-blue-400 bg-blue-50 p-4">
+                        <h4 class="font-semibold text-blue-800">{{ case.caseName }} ({{ case.year }})</h4>
+                        <p class="text-blue-700 mt-2">{{ case.contribution }}</p>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            {% endif %}
+        </section>
+        {% endif %}
+
+        {% if concept.deconstruction and concept.deconstruction.essentialElementsTest %}
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Essential Elements</h2>
+            <div class="space-y-4">
+                {% for element in concept.deconstruction.essentialElementsTest %}
+                <div class="bg-gray-50 p-4 rounded-lg">
+                    <h3 class="font-semibold text-gray-800 mb-2">{{ element.element }}</h3>
+                    <p class="text-gray-700">{{ element.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
+    </article>
+</div>
+
+<style>
+.prose p {
+    margin-bottom: 1rem;
+}
+</style>
+
 
     <div>{{ content | safe }}</div>
 </div>
 
 <hr />
+{% if meta and meta.update and meta.author %}
 <p class="content-center text-sm text-gray-600">{{ site[locale]._t.updated_on }}: {{ meta.update  | formatDate("DD", locale) }}, {{ site[locale]._t.by }}  {{ meta.author }}</p>
+{% endif %}
 {% if site.repoUrl %}
 <a class="text-sm" href="{{ site.repoUrl }}/edit/{{ site.repoDefaultBranch }}/{{page.inputPath}}">{{ site[locale]._t.edit_on_git }}</a>
 {% endif %}

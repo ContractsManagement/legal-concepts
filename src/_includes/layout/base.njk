@@ -18,6 +18,267 @@
     <meta charset="UTF-8">
     <meta name="description" content="{{ description }}">
     <meta name="keywords" content="{{ keywords }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- RSS Feed -->
+    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} RSS Feed" href="{{ '/rss.xml' | url }}">
+    
+    <!-- Enhanced SEO Meta Tags for Concepts -->
+    {% if concept %}
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="{{ concept.principleName }} - {{ site.name }}">
+    <meta property="og:description" content="{{ concept.coreConcept.elevatorPitch }}">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="{{ site.rootUrl }}{{ page.url }}">
+    <meta property="og:site_name" content="{{ site.name }}">
+    <meta property="article:section" content="{{ concept.fieldOfLaw }}">
+    <meta property="article:tag" content="{{ concept.primaryJurisdiction }}">
+    {% if concept.aliases %}
+    {% for alias in concept.aliases %}
+    <meta property="article:tag" content="{{ alias }}">
+    {% endfor %}
+    {% endif %}
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{{ concept.principleName }}">
+    <meta name="twitter:description" content="{{ concept.coreConcept.elevatorPitch }}">
+
+    <!-- Legal-specific meta tags -->
+    <meta name="legal.jurisdiction" content="{{ concept.primaryJurisdiction }}">
+    <meta name="legal.field" content="{{ concept.fieldOfLaw }}">
+    {% if concept.discovery.origin.landmarkCase %}
+    <meta name="legal.landmark_case" content="{{ concept.discovery.origin.landmarkCase }}">
+    {% endif %}
+
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Article",
+      "headline": "{{ concept.principleName }}",
+      "description": "{{ concept.coreConcept.elevatorPitch }}",
+      "author": {
+        "@type": "Organization",
+        "name": "{{ site.name }}",
+        "url": "{{ site.rootUrl }}"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.name }}",
+        "url": "{{ site.rootUrl }}"
+      },
+      "datePublished": "{{ site.buildTime | dateIso }}",
+      "dateModified": "{{ site.buildTime | dateIso }}",
+      "url": "{{ site.rootUrl }}{{ page.url }}",
+      "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "{{ site.rootUrl }}{{ page.url }}"
+      },
+      "articleSection": "{{ concept.fieldOfLaw }}",
+      "keywords": [
+        "{{ concept.principleName }}",
+        {% if concept.aliases %}
+        {% for alias in concept.aliases %}
+        "{{ alias }}"{{ "," if not loop.last }}
+        {% endfor %},
+        {% endif %}
+        "{{ concept.fieldOfLaw }}",
+        "{{ concept.primaryJurisdiction }}",
+        "construction law",
+        "legal concept"
+      ],
+      "about": {
+        "@type": "Thing",
+        "name": "{{ concept.principleName }}",
+        "description": "{{ concept.coreConcept.elevatorPitch }}",
+        "additionalType": "https://schema.org/LegalDocument"
+      },
+      "genre": "Legal Education",
+      "educationalLevel": "Professional",
+      "learningResourceType": "Legal Concept",
+      "audience": {
+        "@type": "EducationalAudience",
+        "educationalRole": "Legal Professional"
+      },
+      {% if concept.discovery.origin.landmarkCase %}
+      "citation": {
+        "@type": "LegalCase",
+        "name": "{{ concept.discovery.origin.landmarkCase }}",
+        "description": "{{ concept.discovery.origin.summary }}"
+      },
+      {% endif %}
+      "spatialCoverage": {
+        "@type": "Place",
+        "name": "{{ concept.primaryJurisdiction }}"
+      },
+      "isPartOf": {
+        "@type": "CreativeWorkSeries",
+        "name": "Legal Concepts Repository",
+        "url": "{{ site.rootUrl }}/en/concepts/"
+      }
+    }
+    </script>
+
+    <!-- Legal Case JSON-LD for landmark cases -->
+    {% if concept.discovery.origin.landmarkCase %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "LegalCase",
+      "name": "{{ concept.discovery.origin.landmarkCase }}",
+      "description": "{{ concept.discovery.origin.summary }}",
+      "jurisdiction": "{{ concept.primaryJurisdiction }}",
+      "caseStatus": "Historical",
+      "relatedTo": {
+        "@type": "Article",
+        "name": "{{ concept.principleName }}",
+        "url": "{{ site.rootUrl }}{{ page.url }}"
+      }
+    }
+    </script>
+    {% endif %}
+
+    <!-- FAQ Schema for Essential Elements -->
+    {% if concept.deconstruction.essentialElementsTest and concept.deconstruction.essentialElementsTest.length > 0 %}
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {% for element in concept.deconstruction.essentialElementsTest %}
+        {
+          "@type": "Question",
+          "name": "What is {{ element.element }}?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "{{ element.description }}"
+          }
+        }{{ "," if not loop.last }}
+        {% endfor %}
+      ]
+    }
+    </script>
+    {% endif %}
+    {% endif %}
+    
+    <!-- Enhanced SEO Meta Tags for Concepts Portal -->
+    {% if legal_concepts and page.url == '/en/concepts/' %}
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Legal Concepts Catalog - {{ site.name }}">
+    <meta property="og:description" content="{{ legal_concepts.description }}">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="{{ site.rootUrl }}/en/concepts/">
+    <meta property="og:site_name" content="{{ site.name }}">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Legal Concepts Catalog">
+    <meta name="twitter:description" content="{{ legal_concepts.description }}">
+
+    <!-- JSON-LD Structured Data for Concepts Portal -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "CollectionPage",
+      "name": "Legal Concepts Catalog",
+      "description": "{{ legal_concepts.description }}",
+      "url": "{{ site.rootUrl }}/en/concepts/",
+      "publisher": {
+        "@type": "Organization",
+        "name": "{{ site.name }}",
+        "url": "{{ site.rootUrl }}"
+      },
+      "mainEntity": {
+        "@type": "ItemList",
+        "name": "Construction Law Concepts",
+        "description": "Comprehensive catalog of construction law principles",
+        "numberOfItems": {{ legal_concepts.principles | size }},
+        "itemListElement": [
+          {% for concept in legal_concepts.principles %}
+          {
+            "@type": "ListItem",
+            "position": {{ loop.index }},
+            "item": {
+              "@type": "Article",
+              "@id": "{{ site.rootUrl }}/en/concepts/{{ concept.principleName | slug }}/",
+              "name": "{{ concept.principleName }}",
+              "description": "{{ concept.coreConcept.elevatorPitch }}",
+              "genre": "Legal Education",
+              "about": {
+                "@type": "Thing",
+                "name": "{{ concept.principleName }}",
+                "additionalType": "https://schema.org/LegalDocument"
+              },
+              "spatialCoverage": {
+                "@type": "Place",
+                "name": "{{ concept.primaryJurisdiction }}"
+              }
+            }
+          }{{ "," if not loop.last }}
+          {% endfor %}
+        ]
+      },
+      "breadcrumb": {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "{{ site.rootUrl }}"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Legal Concepts",
+            "item": "{{ site.rootUrl }}/en/concepts/"
+          }
+        ]
+      },
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{{ site.rootUrl }}/en/concepts/?search={search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+    </script>
+
+    <!-- Educational Organization Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "EducationalOrganization",
+      "name": "{{ site.name }}",
+      "url": "{{ site.rootUrl }}",
+      "description": "{{ legal_concepts.description }}",
+      "educationalCredentialAwarded": "Legal Knowledge",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Legal Concepts Catalog",
+        "itemListElement": [
+          {% for concept in legal_concepts.principles %}
+          {
+            "@type": "Course",
+            "name": "{{ concept.principleName }}",
+            "description": "{{ concept.coreConcept.elevatorPitch }}",
+            "provider": {
+              "@type": "Organization",
+              "name": "{{ site.name }}"
+            },
+            "educationalLevel": "Professional",
+            "teaches": "{{ concept.principleName }}",
+            "courseMode": "Online",
+            "isAccessibleForFree": true
+          }{{ "," if not loop.last }}
+          {% endfor %}
+        ]
+      }
+    }
+    </script>
+    {% endif %}
+    
+    <!-- Favicons and Stylesheets -->
     <link rel="icon" type="image/png" href="{{ site.faviconUrl | url  }}">
     <link rel="stylesheet" type="text/css" href="{{ '/assets/main.css' | url }}"/>
     <link href="https://unpkg.com/prismjs@1.21.0/themes/prism-okaidia.css" rel="stylesheet">

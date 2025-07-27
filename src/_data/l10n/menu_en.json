@@ -1,11 +1,12 @@
 {
-    "top": [{
+    "top": [
+        {
             "title": "About",
             "href": "/en/pages/about/"
         },
         {
-            "title": "Products",
-            "href": "/en/products/"
+            "title": "Legal Concepts",
+            "href": "/en/concepts/"
         },
         {
             "title": "Articles",
@@ -13,20 +14,13 @@
         },
         {
             "icon": "fab fa-git",
-            "href": "https://github.com/creasoft-dev/fundamenty"
-        },
-        {
-            "icon": "fab fa-twitter",
-            "href": "https://twitter.com/creasoftdev"
+            "href": "https://github.com/ContractsManagement/legal-concepts"
         }
     ],
-    "side": [{
-            "title": "CreaSoft",
-            "href": "https://creasoft.dev"
-        },
+    "side": [
         {
-            "title": "Empoderemos Mas",
-            "href": "https://empoderemosmas.com"
+            "title": "Contracts Management Project",
+            "href": "https://github.com/ContractsManagement"
         }
     ]
 }

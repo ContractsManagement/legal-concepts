@@ -1,11 +1,96 @@
-<footer class="w-full bg-gray-100 mt-6 p-2 border-t-1 border-gray-300">
-  <div class="w-full container mx-auto flex flex-col items-center justify-center text-sm text-gray-600">
-    <div class="block">
-      {{ site.name }}.
+<footer class="w-full bg-gray-100 mt-6 p-6 border-t-1 border-gray-300">
+  <div class="w-full container mx-auto">
+    <!-- Main Footer Content -->
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-6">
+      
+      <!-- Site Info Column -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-semibold text-gray-800">{{ site.name }}</h3>
+        <p class="text-sm text-gray-600">A comprehensive legal reference guide covering foundational construction law doctrines and principles from England & Wales.</p>
+        <div class="flex space-x-4">
+          <!-- Social Links -->
+          <a href="https://github.com/ContractsManagement/legal-concepts" class="text-gray-600 hover:text-gray-800" title="GitHub">
+            <i class="fab fa-github text-xl"></i>
+          </a>
+          <a href="https://twitter.com/creasoftdev" class="text-gray-600 hover:text-gray-800" title="Twitter">
+            <i class="fab fa-twitter text-xl"></i>
+          </a>
+          <a href="/rss.xml" class="text-gray-600 hover:text-gray-800" title="RSS Feed">
+            <i class="fas fa-rss text-xl"></i>
+          </a>
+          <!-- Placeholder for LinkedIn -->
+          <a href="#" class="text-gray-400 hover:text-gray-600" title="LinkedIn (Coming Soon)">
+            <i class="fab fa-linkedin text-xl"></i>
+          </a>
+          <!-- Placeholder for YouTube -->
+          <a href="#" class="text-gray-400 hover:text-gray-600" title="YouTube (Coming Soon)">
+            <i class="fab fa-youtube text-xl"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Quick Links Column -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-semibold text-gray-800">Quick Links</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/en/pages/about/" class="text-gray-600 hover:text-gray-800 hover:underline">About</a></li>
+          <li><a href="/en/concepts/" class="text-gray-600 hover:text-gray-800 hover:underline">Legal Concepts</a></li>
+          <li><a href="/en/pages/articles/" class="text-gray-600 hover:text-gray-800 hover:underline">Articles</a></li>
+          <li><a href="/en/pages/search/" class="text-gray-600 hover:text-gray-800 hover:underline">Search</a></li>
+          <!-- Placeholder Links -->
+          <li><a href="#" class="text-gray-400 hover:text-gray-600 hover:underline">Case Law Database (Coming Soon)</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-gray-600 hover:underline">Newsletter (Coming Soon)</a></li>
+        </ul>
+      </div>
+
+      <!-- API & Resources Column -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-semibold text-gray-800">API & Resources</h3>
+        <ul class="space-y-2 text-sm">
+          <li><a href="/api/concepts.json" class="text-gray-600 hover:text-gray-800 hover:underline">Concepts API</a></li>
+          <li><a href="/api/pages.json" class="text-gray-600 hover:text-gray-800 hover:underline">Pages API</a></li>
+          <li><a href="/api/posts.json" class="text-gray-600 hover:text-gray-800 hover:underline">Posts API</a></li>
+          <li><a href="/rss.xml" class="text-gray-600 hover:text-gray-800 hover:underline">RSS Feed</a></li>
+          <li><a href="/sitemap.xml" class="text-gray-600 hover:text-gray-800 hover:underline">Sitemap</a></li>
+          <li><a href="/robots.txt" class="text-gray-600 hover:text-gray-800 hover:underline">Robots.txt</a></li>
+          <!-- Placeholder API Links -->
+          <li><a href="#" class="text-gray-400 hover:text-gray-600 hover:underline">GraphQL API (Coming Soon)</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-gray-600 hover:underline">OpenAPI Docs (Coming Soon)</a></li>
+        </ul>
+      </div>
+
+      <!-- Legal & Support Column -->
+      <div class="space-y-4">
+        <h3 class="text-lg font-semibold text-gray-800">Legal & Support</h3>
+        <ul class="space-y-2 text-sm">
+          <!-- Placeholder Legal Links -->
+          <li><a href="#" class="text-gray-400 hover:text-gray-600 hover:underline">Privacy Policy (Coming Soon)</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-gray-600 hover:underline">Terms of Use (Coming Soon)</a></li>
+          <li><a href="#" class="text-gray-400 hover:text-gray-600 hover:underline">Legal Disclaimer (Coming Soon)</a></li>
+          <li><a href="https://github.com/ContractsManagement/legal-concepts" class="text-gray-400 hover:text-gray-600 hover:underline">Contact Us</a></li>
+          <li><a href="https://github.com/ContractsManagement/legal-concepts/issues/new" class="text-gray-400 hover:text-gray-600 hover:underline">Support Forum</a></li>
+          <li><a href="https://github.com/ContractsManagement/legal-concepts/blob/main/CONTRIBUTING.md" class="text-gray-400 hover:text-gray-600 hover:underline">Contribute</a></li>
+        </ul>
+        <div class="pt-2">
+          <p class="text-xs text-gray-500">
+            <strong>Disclaimer:</strong> For educational purposes only. Not legal advice.
+          </p>
+        </div>
+      </div>
     </div>
-    <div>
-      Site generated on {{ site.buildTime  | formatDate("DD", locale) }}. Site generator based on <a href="https://github.com/creasoft-dev/fundamenty">Fundamenty</a> by <a href="https://creasoft.dev/">CreaSoft.dev</a>.
-      Powered by <a href="https://www.11ty.dev/" >Eleventy</a>
+
+    <!-- Footer Bottom -->
+    <div class="border-t border-gray-300 pt-4">
+      <div class="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+        <div class="text-sm text-gray-600">
+          Site generated on {{ site.buildTime | formatDate("DD", locale) }}. 
+          Site generator based on <a href="https://github.com/creasoft-dev/fundamenty" class="hover:underline">Fundamenty</a> by <a href="https://creasoft.dev/" class="hover:underline">CreaSoft.dev</a>.
+          Powered by <a href="https://www.11ty.dev/" class="hover:underline">Eleventy</a>.
+        </div>
+        <div class="text-sm text-gray-600">
+          © {{ site.buildTime | formatDate("yyyy") }} {{ site.name }}. <a href="https://creativecommons.org/licenses/by-sa/4.0/">(CC BY-SA 4.0) license</a>.
+        </div>
+      </div>
     </div>
   </div>
 </footer>

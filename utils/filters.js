@@ -12,7 +12,18 @@ module.exports = {
     // date filter (localized)
     formatDate: function (date, format, locale) {
         locale = locale ? locale : "en";
-        return DateTime.fromJSDate(date).toFormat(format, { locale });
+
+        // Handle both Date objects and date strings
+        let dt;
+        if (date instanceof Date) {
+            dt = DateTime.fromJSDate(date);
+        } else if (typeof date === 'string') {
+            dt = DateTime.fromISO(date);
+        } else {
+            return "Invalid Date";
+        }
+
+        return dt.toFormat(format, { locale });
     },
 
     // Add filter for data formatting
@@ -20,12 +31,22 @@ module.exports = {
         return DateTime.fromJSDate(date).toISO();
     },
 
+    // Add filter for RSS date formatting
+    dateRss: date => {
+        return DateTime.fromJSDate(date).toRFC2822();
+    },
+
     jsonify: text => {
         return JSON.stringify(text); // E.g. May 31, 2019
     },
 
+    // Get array length
+    size: array => {
+        return Array.isArray(array) ? array.length : 0;
+    },
+
     // Strip out html
-    algExcerpt: function(text) {
+    algExcerpt: function (text) {
         //first remove code
         text = text.replace(/<code class="language-.*?">.*?<\/code>/sg, '');
         //now remove html tags
