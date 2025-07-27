@@ -1,0 +1,18 @@
+---
+permalink: /api/concepts.json
+---
+[
+  {% for item in collections.concept  %}{% set data = item.data  %}
+    {
+      "title": "{{ data.title }}",
+      "lang": "{{ data.locale }}",
+      "tags": "{{ data.tags }}",
+      "concept": {{ data.concept | dump | safe }},
+      "technical": {{ data.technical | jsonify | safe }},
+      "meta": {{ data.meta | jsonify | safe }},
+      "url": "{{ item.url }}",
+      "objectID": "{{ item.url }}",
+      "content": "{{ item.templateContent  | algExcerpt | jsonify }}"
+    }{{ '' if loop.last else ',' }}
+  {% endfor  %}
+]
