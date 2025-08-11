@@ -18,16 +18,16 @@
     
     
     <!-- Favicons and Stylesheets -->
-    <link rel="icon" type="image/png" href="/images/logo.ico">
+    <link rel="icon" type="image/png" href="images/logo.ico">
     <link rel="stylesheet" type="text/css" href="/assets/main.css"/>
     <link href="https://unpkg.com/prismjs@1.21.0/themes/prism-okaidia.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css" rel="stylesheet">
   </head>
   <body>
-    <nav id="header" class=" fixed w-full z-10 top-0 bg-gray-100 shadow-md ">
+    <nav id="header" class=" fixed w-full z-10 top-0 bg-gray-200 shadow-md ">
   <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-4  ">
     <div class="pl-4 flex items-center">
-      <img src="/images/logo.png" alt="Logo" class="h-5 mr-1"/>
+      <img src="images/logo.png" alt="Logo" class="h-5 mr-1"/>
       <a  href="/ " class="no-underline hover:no-underline font-extrabold text-xl" >
         Construction Law Concepts Repository
       </a>
@@ -46,25 +46,56 @@
       </div>
       <ul class="list-reset md:flex justify-end items-center list-none text-sm">
         
-          <li class="mr-3 py-2 md:py-0" title="About this site">
-            <a href="/pages/about/" class="inline-block py-2 px-2 font-bold no-underline hover:underline hover:bg-primary bg:rounded-md hover:text-white  uppercase">
-              <i class="fa fa-info fill-current "></i>About</a>
-          </li>
         
-          <li class="mr-3 py-2 md:py-0" title="Browse legal concepts">
-            <a href="/concepts/" class="inline-block py-2 px-2 font-bold no-underline hover:underline hover:bg-primary bg:rounded-md hover:text-white  uppercase">
-              <i class="fa fa-book fill-current "></i>Concepts</a>
-          </li>
+          
+            
+            <li class="mr-3 py-2 md:py-0" title="About this site">
+              <a href="/pages/about/" class="inline-block py-2 px-2 font-bold no-underline hover:underline hover:bg-primary bg:rounded-md hover:text-white  uppercase">
+                <i class="fa fa-info fill-current "></i>About</a>
+            </li>
+          
         
-          <li class="mr-3 py-2 md:py-0" title="About this site">
-            <a href="/pages/about/" class="inline-block py-2 px-2 font-bold no-underline hover:underline hover:bg-primary bg:rounded-md hover:text-white  uppercase">
-              <i class="fa fa-info fill-current "></i>About</a>
-          </li>
+          
+            
+            <li class="mr-3 py-2 md:py-0" title="Browse legal concepts">
+              <a href="/concepts/" class="inline-block py-2 px-2 font-bold no-underline hover:underline hover:bg-primary bg:rounded-md hover:text-white  uppercase">
+                <i class="fa fa-book fill-current "></i>Concepts</a>
+            </li>
+          
         
-          <li class="mr-3 py-2 md:py-0" title="Browse legal concepts">
-            <a href="/concepts/" class="inline-block py-2 px-2 font-bold no-underline hover:underline hover:bg-primary bg:rounded-md hover:text-white  uppercase">
-              <i class="fa fa-book fill-current "></i>Concepts</a>
-          </li>
+          
+            
+            <li class="mr-3 py-2 md:py-0" title="Browse by jurisdiction">
+              <a href="/jurisdictions/" class="inline-block py-2 px-2 font-bold no-underline hover:underline hover:bg-primary bg:rounded-md hover:text-white  uppercase">
+                <i class="fa fa-globe fill-current "></i>Jurisdictions</a>
+            </li>
+          
+        
+          
+            
+            <li class="mr-3 py-2 md:py-0" title="Browse by field of law">
+              <a href="/fields/" class="inline-block py-2 px-2 font-bold no-underline hover:underline hover:bg-primary bg:rounded-md hover:text-white  uppercase">
+                <i class="fa fa-balance-scale fill-current "></i>Fields</a>
+            </li>
+          
+        
+          
+            
+            <li class="mr-3 py-2 md:py-0" title="Browse landmark cases">
+              <a href="/cases/" class="inline-block py-2 px-2 font-bold no-underline hover:underline hover:bg-primary bg:rounded-md hover:text-white  uppercase">
+                <i class="fa fa-gavel fill-current "></i>Cases</a>
+            </li>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
         
       </ul>
 
@@ -72,9 +103,7 @@
   </div>
 </nav>
 
-
     
-
     
     <div class="container w-full flex flex-wrap mx-auto px-2 pt-8 lg:pt-16 mt-16">
       <div class="content w-full">
@@ -145,14 +174,8 @@
 
 
       </div>
-      
-      <div class="content w-full">
-        <div id="disqus_thread"></div>
-      </div>
-      
     </div>
     
-
     <footer class="w-full bg-gray-100 mt-6 p-6 border-t-1 border-gray-300">
   <div class="w-full container mx-auto">
     <!-- Main Footer Content -->
@@ -164,7 +187,7 @@
         <p class="text-sm text-gray-600">A comprehensive legal reference guide covering foundational construction law doctrines and principles from England & Wales.</p>
         <div class="flex space-x-4">
           <!-- Social Links -->
-          <a href="https://github.com/ContractsManagement/legal-concepts" class="text-gray-600 hover:text-gray-800" title="GitHub">
+          <a href="https://github.com/ContractsManagement" class="text-gray-600 hover:text-gray-800" title="GitHub">
             <i class="fab fa-github text-xl"></i>
           </a>
           <a href="https://twitter.com/#" class="text-gray-600 hover:text-gray-800" title="Twitter">
@@ -202,12 +225,12 @@
       <div class="space-y-4">
         <h3 class="text-lg font-semibold text-gray-800">API & Resources</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="/api/concepts.json" class="text-gray-600 hover:text-gray-800 hover:underline">Concepts API</a></li>
-          <li><a href="/api/pages.json" class="text-gray-600 hover:text-gray-800 hover:underline">Pages API</a></li>
-          <li><a href="/api/posts.json" class="text-gray-600 hover:text-gray-800 hover:underline">Posts API</a></li>
-          <li><a href="/rss.xml" class="text-gray-600 hover:text-gray-800 hover:underline">RSS Feed</a></li>
-          <li><a href="/sitemap.xml" class="text-gray-600 hover:text-gray-800 hover:underline">Sitemap</a></li>
-          <li><a href="/robots.txt" class="text-gray-600 hover:text-gray-800 hover:underline">Robots.txt</a></li>
+          <li><a href="api/concepts.json" class="text-gray-600 hover:text-gray-800 hover:underline">Concepts API</a></li>
+          <li><a href="api/pages.json" class="text-gray-600 hover:text-gray-800 hover:underline">Pages API</a></li>
+          <li><a href="api/posts.json" class="text-gray-600 hover:text-gray-800 hover:underline">Posts API</a></li>
+          <li><a href="rss.xml" class="text-gray-600 hover:text-gray-800 hover:underline">RSS Feed</a></li>
+          <li><a href="sitemap.xml" class="text-gray-600 hover:text-gray-800 hover:underline">Sitemap</a></li>
+          <li><a href="robots.txt" class="text-gray-600 hover:text-gray-800 hover:underline">Robots.txt</a></li>
           <!-- Placeholder API Links -->
           <li><a href="#" class="text-gray-400 hover:text-gray-600 hover:underline">GraphQL API (Coming Soon)</a></li>
           <li><a href="#" class="text-gray-400 hover:text-gray-600 hover:underline">OpenAPI Docs (Coming Soon)</a></li>
@@ -238,7 +261,7 @@
     <div class="border-t border-gray-300 pt-4">
       <div class="flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
         <div class="text-sm text-gray-600">
-          Site generated on Jul 27, 2025. 
+          Site generated on Aug 11, 2025. 
           Site generator based on <a href="https://github.com/creasoft-dev/fundamenty" class="hover:underline">Fundamenty</a> by <a href="https://creasoft.dev/" class="hover:underline">CreaSoft.dev</a>.
           Powered by <a href="https://www.11ty.dev/" class="hover:underline">Eleventy</a>.
         </div>
@@ -250,150 +273,8 @@
   </div>
 </footer>
 
-
     <script src="/assets/main.js"></script>
-
     
-    <script>
-
-      /* https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8 */
-      /* Toggle dropdown list */
-
-      var navMenuDiv = document.getElementById("nav-content");
-      var navMenu = document.getElementById("nav-toggle");
-
-
-      document.onclick = check;
-
-      function check(e) {
-        var target = (e && e.target) || (event && event.srcElement);
-
-        //Nav Menu
-        if (!checkParent(target, navMenuDiv)) {
-          // click NOT on the menu
-          if (checkParent(target, navMenu)) {
-            // click on the link
-            if (navMenuDiv.classList.contains("hidden")) {
-              navMenuDiv
-                .classList
-                .remove("hidden");
-            } else {
-              navMenuDiv
-                .classList
-                .add("hidden");
-            }
-          } else {
-            // click both outside link and outside menu, hide menu
-            navMenuDiv
-              .classList
-              .add("hidden");
-          }
-        }
-
-        //Help Menu
-        if (!checkParent(target, helpMenuDiv)) {
-          // click NOT on the menu
-          if (checkParent(target, helpMenu)) {
-            // click on the link
-            if (helpMenuDiv.classList.contains("hidden")) {
-              helpMenuDiv
-                .classList
-                .remove("hidden");
-            } else {
-              helpMenuDiv
-                .classList
-                .add("hidden");
-            }
-          } else {
-            // click both outside link and outside menu, hide menu
-            helpMenuDiv
-              .classList
-              .add("hidden");
-          }
-        }
-
-      }
-
-      function checkParent(t, elm) {
-        while (t.parentNode) {
-          if (t == elm) {
-            return true;
-          }
-          t = t.parentNode;
-        }
-        return false;
-      }
-
-      /* https://gist.github.com/slavapas/593e8e50cf4cc16ac972afcbad4f70c8 */
-      /* Toggle dropdown list */
-
-      var navMenuDiv = document.getElementById("nav-content");
-      var navMenu = document.getElementById("nav-toggle");
-
-
-      document.onclick = check;
-
-      function check(e) {
-        var target = (e && e.target) || (event && event.srcElement);
-
-        //Nav Menu
-        if (!checkParent(target, navMenuDiv)) {
-          // click NOT on the menu
-          if (checkParent(target, navMenu)) {
-            // click on the link
-            if (navMenuDiv.classList.contains("hidden")) {
-              navMenuDiv
-                .classList
-                .remove("hidden");
-            } else {
-              navMenuDiv
-                .classList
-                .add("hidden");
-            }
-          } else {
-            // click both outside link and outside menu, hide menu
-            navMenuDiv
-              .classList
-              .add("hidden");
-          }
-        }
-
-        //Help Menu
-        if (!checkParent(target, helpMenuDiv)) {
-          // click NOT on the menu
-          if (checkParent(target, helpMenu)) {
-            // click on the link
-            if (helpMenuDiv.classList.contains("hidden")) {
-              helpMenuDiv
-                .classList
-                .remove("hidden");
-            } else {
-              helpMenuDiv
-                .classList
-                .add("hidden");
-            }
-          } else {
-            // click both outside link and outside menu, hide menu
-            helpMenuDiv
-              .classList
-              .add("hidden");
-          }
-        }
-
-      }
-
-      function checkParent(t, elm) {
-        while (t.parentNode) {
-          if (t == elm) {
-            return true;
-          }
-          t = t.parentNode;
-        }
-        return false;
-      }
-
-
-    </script>
     
   </body>
 </html>

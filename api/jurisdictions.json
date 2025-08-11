@@ -1,0 +1,260 @@
+[
+  
+  {
+    "name": "England &amp; Wales",
+    "slug": "england-and-wales",
+    "conceptCount": 31,
+    "concepts": [
+      
+      {
+        "principleName": "The Concept of a Non-Delegable Duty of Care",
+        "slug": "the-concept-of-a-non-delegable-duty-of-care",
+        "fieldOfLaw": "Construction Law - Tort Liability",
+        "elevatorPitch": "A heightened form of duty that requires a defendant not only to take reasonable care themselves, but to ensure that reasonable care is taken by anyone performing functions on their behalf - creating l...",
+        "url": "/concepts/the-concept-of-a-non-delegable-duty-of-care/"
+      },
+      
+      {
+        "principleName": "The Concept of Constructive Acceleration of Works",
+        "slug": "the-concept-of-constructive-acceleration-of-works",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "A doctrine treating employer&#39;s failure to grant deserved time extensions as implicit instruction to accelerate, creating entitlement to acceleration costs.",
+        "url": "/concepts/the-concept-of-constructive-acceleration-of-works/"
+      },
+      
+      {
+        "principleName": "The Concept of &#39;Pay-When-Paid&#39; and its Statutory Prohibition",
+        "slug": "the-concept-of-&#39;pay-when-paid&#39;-and-its-statutory-prohibition",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "Contractual provisions making payment conditional on receipt of funds from third parties, largely prohibited in construction contracts by statute.",
+        "url": "/concepts/the-concept-of-&#39;pay-when-paid&#39;-and-its-statutory-prohibition/"
+      },
+      
+      {
+        "principleName": "The &#39;Cost of Cure&#39; vs. &#39;Loss of Amenity&#39; Principle (Ruxley v Forsyth)",
+        "slug": "the-&#39;cost-of-cure&#39;-vs.-&#39;loss-of-amenity&#39;-principle-(ruxley-v-forsyth)",
+        "fieldOfLaw": "Construction Law - Remedies and Damages",
+        "elevatorPitch": "A judicial doctrine establishing that damages for construction defects should be measured by cost of cure only where reinstatement is reasonable and proportionate; where cure costs are disproportionat...",
+        "url": "/concepts/the-&#39;cost-of-cure&#39;-vs.-&#39;loss-of-amenity&#39;-principle-(ruxley-v-forsyth)/"
+      },
+      
+      {
+        "principleName": "The Doctrine of Frustration of Contract",
+        "slug": "the-doctrine-of-frustration-of-contract",
+        "fieldOfLaw": "Construction Law - Contract Termination",
+        "elevatorPitch": "A legal doctrine that automatically terminates contracts when supervening events render performance impossible or radically different from what was originally contemplated, without fault of either par...",
+        "url": "/concepts/the-doctrine-of-frustration-of-contract/"
+      },
+      
+      {
+        "principleName": "The Doctrine of Incorporation of Terms by Reference",
+        "slug": "the-doctrine-of-incorporation-of-terms-by-reference",
+        "fieldOfLaw": "Construction Law - Contract Formation",
+        "elevatorPitch": "A principle allowing external documents, standards, or terms to become part of a contract through clear reference, enabling complex construction contracts to incorporate extensive technical specificat...",
+        "url": "/concepts/the-doctrine-of-incorporation-of-terms-by-reference/"
+      },
+      
+      {
+        "principleName": "The Doctrine of Privity of Contract and its Statutory Exceptions",
+        "slug": "the-doctrine-of-privity-of-contract-and-its-statutory-exceptions",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "The rule that only parties to a contract can enforce its terms, subject to statutory exceptions allowing third party beneficiaries to claim in specified circumstances.",
+        "url": "/concepts/the-doctrine-of-privity-of-contract-and-its-statutory-exceptions/"
+      },
+      
+      {
+        "principleName": "The Doctrine of Rectification for Common Mistake",
+        "slug": "the-doctrine-of-rectification-for-common-mistake",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "An equitable remedy allowing courts to correct written contracts that fail to record the parties&#39; true common intention due to mistake.",
+        "url": "/concepts/the-doctrine-of-rectification-for-common-mistake/"
+      },
+      
+      {
+        "principleName": "The Doctrine of Subrogation in Insurance Matters",
+        "slug": "the-doctrine-of-subrogation-in-insurance-matters",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "A principle allowing insurers who pay claims to step into their insured&#39;s shoes and pursue recovery against parties responsible for the loss.",
+        "url": "/concepts/the-doctrine-of-subrogation-in-insurance-matters/"
+      },
+      
+      {
+        "principleName": "The Doctrine of Total Failure of Consideration",
+        "slug": "the-doctrine-of-total-failure-of-consideration",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "A restitutionary principle allowing recovery of payments where the consideration has totally failed, returning parties to their pre-contractual position.",
+        "url": "/concepts/the-doctrine-of-total-failure-of-consideration/"
+      },
+      
+      {
+        "principleName": "The Doctrine of Unconscionability in Contractual Bargains",
+        "slug": "the-doctrine-of-unconscionability-in-contractual-bargains",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "An equitable doctrine allowing courts to set aside contracts where one party has unfairly exploited the other&#39;s weakness, ignorance, or necessity.",
+        "url": "/concepts/the-doctrine-of-unconscionability-in-contractual-bargains/"
+      },
+      
+      {
+        "principleName": "The Doctrine of Vicarious Liability",
+        "slug": "the-doctrine-of-vicarious-liability",
+        "fieldOfLaw": "Construction Law - Tort Liability",
+        "elevatorPitch": "A strict liability doctrine that holds employers automatically responsible for tortious acts committed by employees during the course of their employment, extending liability beyond the actual wrongdo...",
+        "url": "/concepts/the-doctrine-of-vicarious-liability/"
+      },
+      
+      {
+        "principleName": "The Doctrine of Waiver (Waiver by Election and Waiver by Estoppel)",
+        "slug": "the-doctrine-of-waiver-(waiver-by-election-and-waiver-by-estoppel)",
+        "fieldOfLaw": "Construction Law - Contract Performance",
+        "elevatorPitch": "A doctrine preventing parties from claiming breach of contract where they have either made a clear choice to continue performance despite breach (election) or led the other party to believe breach is ...",
+        "url": "/concepts/the-doctrine-of-waiver-(waiver-by-election-and-waiver-by-estoppel)/"
+      },
+      
+      {
+        "principleName": "The Economic Torts (e.g., Inducing Breach of Contract)",
+        "slug": "the-economic-torts-(e.g.-inducing-breach-of-contract)",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "Torts protecting economic interests by imposing liability for intentionally interfering with contractual relations or causing economic loss through unlawful means.",
+        "url": "/concepts/the-economic-torts-(e.g.-inducing-breach-of-contract)/"
+      },
+      
+      {
+        "principleName": "The Equitable Maxim of &#39;Clean Hands&#39;",
+        "slug": "the-equitable-maxim-of-&#39;clean-hands&#39;",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "An equitable principle denying relief to claimants who have acted inequitably in relation to the subject matter of their claim.",
+        "url": "/concepts/the-equitable-maxim-of-&#39;clean-hands&#39;/"
+      },
+      
+      {
+        "principleName": "The Equitable Principle of Set-Off",
+        "slug": "the-equitable-principle-of-set-off",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "A right to reduce payment obligations by deducting cross-claims arising from the same contract or closely connected transactions.",
+        "url": "/concepts/the-equitable-principle-of-set-off/"
+      },
+      
+      {
+        "principleName": "The Implied Duty of Fitness for Purpose",
+        "slug": "the-implied-duty-of-fitness-for-purpose",
+        "fieldOfLaw": "Construction Law - Contractual Obligations",
+        "elevatorPitch": "An absolute contractual duty requiring construction professionals to ensure their design or completed works achieve the intended purpose, regardless of the level of skill, care, or effort applied - cr...",
+        "url": "/concepts/the-implied-duty-of-fitness-for-purpose/"
+      },
+      
+      {
+        "principleName": "The Law of Nuisance as Applied to Construction Sites (e.g., dust, noise)",
+        "slug": "the-law-of-nuisance-as-applied-to-construction-sites-(e.g.-dust-noise)",
+        "fieldOfLaw": "Construction Law - Tort Liability",
+        "elevatorPitch": "A tort protecting landowners from unreasonable interference with use and enjoyment of their property caused by construction activities, balancing legitimate building needs against neighbors&#39; rights th...",
+        "url": "/concepts/the-law-of-nuisance-as-applied-to-construction-sites-(e.g.-dust-noise)/"
+      },
+      
+      {
+        "principleName": "The Law of Trespass as Applied to Construction (e.g., crane oversailing)",
+        "slug": "the-law-of-trespass-as-applied-to-construction-(e.g.-crane-oversailing)",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "A strict liability tort protecting property owners from unauthorized physical intrusion by construction activities, including crane jibs passing over neighboring land without permission.",
+        "url": "/concepts/the-law-of-trespass-as-applied-to-construction-(e.g.-crane-oversailing)/"
+      },
+      
+      {
+        "principleName": "The Legal Concept of Force Majeure",
+        "slug": "the-legal-concept-of-force-majeure",
+        "fieldOfLaw": "Construction Law - Risk Allocation and Excuse",
+        "elevatorPitch": "A contractual mechanism that relieves parties from performing obligations when unforeseeable, exceptional events beyond their control prevent performance - providing structured relief without terminat...",
+        "url": "/concepts/the-legal-concept-of-force-majeure/"
+      },
+      
+      {
+        "principleName": "The Legal Status of a Condition Precedent",
+        "slug": "the-legal-status-of-a-condition-precedent",
+        "fieldOfLaw": "Construction Law - Contract Performance",
+        "elevatorPitch": "A contractual requirement that must be fulfilled before a party&#39;s obligation to perform becomes due, creating suspended rights and obligations that only become enforceable upon condition satisfaction.",
+        "url": "/concepts/the-legal-status-of-a-condition-precedent/"
+      },
+      
+      {
+        "principleName": "The &#39;No Loss&#39; Defence in Claims for Breach",
+        "slug": "the-&#39;no-loss&#39;-defence-in-claims-for-breach",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "A defence arguing that despite contractual breach, the claimant suffered no actual loss and therefore deserves only nominal damages.",
+        "url": "/concepts/the-&#39;no-loss&#39;-defence-in-claims-for-breach/"
+      },
+      
+      {
+        "principleName": "The Obligation to Perform in a &#39;Good and Workmanlike Manner&#39;",
+        "slug": "the-obligation-to-perform-in-a-&#39;good-and-workmanlike-manner&#39;",
+        "fieldOfLaw": "Construction Law - Contractual Obligations",
+        "elevatorPitch": "An implied contractual obligation requiring contractors to perform work using the ordinary skill, efficiency, and knowledge possessed by those working in the relevant trade or business - establishing ...",
+        "url": "/concepts/the-obligation-to-perform-in-a-&#39;good-and-workmanlike-manner&#39;/"
+      },
+      
+      {
+        "principleName": "The &#39;Officious Bystander&#39; Test for Implied Terms",
+        "slug": "the-&#39;officious-bystander&#39;-test-for-implied-terms",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "A judicial test for implying terms into contracts based on whether an officious bystander would say the term was obviously intended by both parties.",
+        "url": "/concepts/the-&#39;officious-bystander&#39;-test-for-implied-terms/"
+      },
+      
+      {
+        "principleName": "The Principle of Contribution Between Joint Tortfeasors",
+        "slug": "the-principle-of-contribution-between-joint-tortfeasors",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "A statutory right enabling parties held liable for the same damage to recover contribution from other responsible parties according to their respective degrees of fault.",
+        "url": "/concepts/the-principle-of-contribution-between-joint-tortfeasors/"
+      },
+      
+      {
+        "principleName": "The Principles Governing &#39;Global Claims&#39;",
+        "slug": "the-principles-governing-&#39;global-claims&#39;",
+        "fieldOfLaw": "Construction Law - Claims and Disputes",
+        "elevatorPitch": "A method of claiming additional costs where multiple causes of delay and disruption are so interlinked that their individual effects cannot be practically separated, allowing recovery based on total i...",
+        "url": "/concepts/the-principles-governing-&#39;global-claims&#39;/"
+      },
+      
+      {
+        "principleName": "The Principles Governing &#39;Total Cost&#39; Claims",
+        "slug": "the-principles-governing-&#39;total-cost&#39;-claims",
+        "fieldOfLaw": "Construction Law - Claims and Disputes",
+        "elevatorPitch": "A damages calculation method comparing total actual project costs against total budgeted costs to establish loss, used when traditional cost build-up is impractical but requiring proof that excess cos...",
+        "url": "/concepts/the-principles-governing-&#39;total-cost&#39;-claims/"
+      },
+      
+      {
+        "principleName": "The Principles of Decennial Liability (primarily in Civil Law systems but influential)",
+        "slug": "the-principles-of-decennial-liability-(primarily-in-civil-law-systems-but-influential)",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "A civil law concept imposing extended liability periods for structural defects, influencing UK warranty periods and professional indemnity requirements.",
+        "url": "/concepts/the-principles-of-decennial-liability-(primarily-in-civil-law-systems-but-influential)/"
+      },
+      
+      {
+        "principleName": "The Principles Underpinning Collateral Warranties",
+        "slug": "the-principles-underpinning-collateral-warranties",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "Contractual devices creating direct rights between construction professionals and third parties who are not party to the main construction contract.",
+        "url": "/concepts/the-principles-underpinning-collateral-warranties/"
+      },
+      
+      {
+        "principleName": "The Rule in Rylands v Fletcher (Strict Liability)",
+        "slug": "the-rule-in-rylands-v-fletcher-(strict-liability)",
+        "fieldOfLaw": "Construction Law - Tort Liability",
+        "elevatorPitch": "A strict liability rule holding persons liable for damage caused when dangerous substances escape from their land during non-natural use, regardless of fault or negligence - creating absolute liabilit...",
+        "url": "/concepts/the-rule-in-rylands-v-fletcher-(strict-liability)/"
+      },
+      
+      {
+        "principleName": "The Scott v Avery Clause (Arbitration as a Precondition to Litigation)",
+        "slug": "the-scott-v-avery-clause-(arbitration-as-a-precondition-to-litigation)",
+        "fieldOfLaw": "Construction Law - Various Applications",
+        "elevatorPitch": "A contractual provision making arbitration a condition precedent to court proceedings, requiring disputes to be arbitrated before litigation can commence.",
+        "url": "/concepts/the-scott-v-avery-clause-(arbitration-as-a-precondition-to-litigation)/"
+      }
+      
+    ]
+  }
+  
+]
