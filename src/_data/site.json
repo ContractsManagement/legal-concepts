@@ -3,8 +3,8 @@
     "repoDefaultBranch": "main",
     "rootUrl": "https://contractsmanagement.github.io/legal-concepts",
     "name": "Construction Law Concepts Repository",
-    "logoUrl": "/images/logo.png",
-    "faviconUrl": "/images/logo.ico",
+    "logoUrl": "images/logo.png",
+    "faviconUrl": "images/logo.ico",
     "googleTagId": "",
     "menu": {
         "top": [
@@ -19,6 +19,24 @@
                 "href": "/concepts/",
                 "icon": "fa fa-book",
                 "tooltip": "Browse legal concepts"
+            },
+            {
+                "title": "Jurisdictions",
+                "href": "/jurisdictions/",
+                "icon": "fa fa-globe",
+                "tooltip": "Browse by jurisdiction"
+            },
+            {
+                "title": "Fields",
+                "href": "/fields/",
+                "icon": "fa fa-balance-scale",
+                "tooltip": "Browse by field of law"
+            },
+            {
+                "title": "Cases",
+                "href": "/cases/",
+                "icon": "fa fa-gavel",
+                "tooltip": "Browse landmark cases"
             }
         ]
     },

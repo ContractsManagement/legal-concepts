@@ -1,10 +1,10 @@
 {
-    "repoUrl": "https://github.com/ContractsManagement/legal-concepts",
+    "repoUrl": "https://github.com/ContractsManagement",
     "repoDefaultBranch": "main",
     "rootUrl": "https://fundamenty.netlify.app",
     "name": "Fundamenty",
-    "logoUrl": "/images/logo.png",
-    "faviconUrl": "/images/logo.ico",
+    "logoUrl": "images/logo.png",
+    "faviconUrl": "images/logo.ico",
     "googleTagId": "",
     "defaultLang": "en",
     "langs": [

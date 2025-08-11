@@ -1,7 +1,9 @@
 ---
 title: "The Law of Trespass as Applied to Construction (e.g., crane oversailing)"
+description: "A strict liability tort protecting property owners from unauthorized physical intrusion by construction activities, including crane jibs passing over neighboring land without permission."
+keywords: "The Law of Trespass as Applied to Construction (e.g., crane oversailing), Construction Trespass, Crane Oversailing, Airspace Trespass, Site Boundary Trespass, Construction Law - Various Applications, England & Wales, construction law, legal concept"
 layout: concepts/concepts_item.njk
-permalink: "concepts/{{ title | slug }}/"
+permalink: "/concepts/{{ title | slug }}/"
 concept:
   principleName: "The Law of Trespass as Applied to Construction (e.g., crane oversailing)"
   aliases: ["Construction Trespass","Crane Oversailing","Airspace Trespass","Site Boundary Trespass"]
@@ -18,6 +20,9 @@ concept:
     evolution: [{"caseName":"Various subsequent developments","year":2000,"contribution":"Continued judicial and legislative refinement of the principle's application and scope in modern construction law."}]
   deconstruction:
     essentialElementsTest: [{"element":"Core Legal Requirement","description":"The fundamental requirement that must be established to successfully apply the law of trespass as applied to construction (e.g., crane oversailing) in construction law contexts."},{"element":"Factual Foundation","description":"The specific factual circumstances that must exist to trigger application of this legal principle."},{"element":"Legal Consequence Test","description":"The test for determining when the principle's legal consequences should apply to the particular circumstances."}]
+  dissemination: {"hypotheticalExample":{"scenario":"A construction scenario where the law of trespass as applied to construction (e.g., crane oversailing) becomes relevant to resolving disputes between contracting parties.","outcome":"Application of the law of trespass as applied to construction (e.g., crane oversailing) principles would determine the legal rights and obligations of the parties involved."},"audienceAdaptation":{"forClient":"This principle affects your construction project by governing the law of trespass as applied to construction (e.g., crane oversailing) issues. Understanding its application helps manage risk and legal exposure.","forLawyer":"Legal analysis of the law of trespass as applied to construction (e.g., crane oversailing) requires careful consideration of precedent, statutory framework, and specific factual matrix of each case."}}
+  deployment: {"application":{"affirmativeArgument":"Establish the factual and legal requirements for the law of trespass as applied to construction (e.g., crane oversailing) and demonstrate their application to the specific circumstances.","defensiveArgument":"Challenge the applicability of the law of trespass as applied to construction (e.g., crane oversailing) by disputing facts, legal interpretation, or availability of alternative legal approaches."},"legalConsequence":"If successfully applied, creates specific legal rights and obligations under the law of trespass as applied to construction (e.g., crane oversailing) framework."}
+  relevantPrinciples: {"Related Construction Law Principles":"Interacts with other construction law doctrines depending on specific context and application of the law of trespass as applied to construction (e.g., crane oversailing)"}
 tags: 
   - legal-concept
   - construction-law

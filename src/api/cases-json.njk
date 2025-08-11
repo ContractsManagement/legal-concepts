@@ -1,0 +1,27 @@
+---
+permalink: /api/cases.json
+---
+[
+  {% for case in collections.cases %}
+  {
+    "name": "{{ case.name }}",
+    "slug": "{{ case.name | slug }}",
+    {% if case.year %}"year": {{ case.year }},{% endif %}
+    {% if case.type %}"type": "{{ case.type }}",{% endif %}
+    {% if case.summary %}"summary": "{{ case.summary | escape }}",{% endif %}
+    {% if case.contribution %}"contribution": "{{ case.contribution | escape }}",{% endif %}
+    "conceptCount": {{ case.concepts.length }},
+    "concepts": [
+      {% for concept in case.concepts %}
+      {
+        "principleName": "{{ concept.data.concept.principleName }}",
+        "slug": "{{ concept.data.concept.principleName | slug }}",
+        "primaryJurisdiction": "{{ concept.data.concept.primaryJurisdiction }}",
+        "fieldOfLaw": "{{ concept.data.concept.fieldOfLaw }}",
+        "url": "/concepts/{{ concept.data.concept.principleName | slug }}/"
+      }{{ '' if loop.last else ',' }}
+      {% endfor %}
+    ]
+  }{{ '' if loop.last else ',' }}
+  {% endfor %}
+]

@@ -19,24 +19,32 @@
       "discovery": {
         "origin": {
           "type": "Common Law (implied terms) and Statute (Sale of Goods Act 1979)",
-          "landmarkCase": "Young & Marten Ltd v McManus Childs Ltd [1969] 1 AC 454",
+          "landmarkCase": {
+            "caseName": "Young & Marten Ltd v McManus Childs Ltd",
+            "year": 1969,
+            "type": "case",
+            "summary": "Established that contractors supplying materials impliedly warrant their fitness for purpose unless expressly excluded, extending Sale of Goods Act principles to construction contracts."
+          },
           "summary": "Established that contractors supplying materials impliedly warrant their fitness for purpose unless expressly excluded, extending Sale of Goods Act principles to construction contracts."
         },
         "evolution": [
           {
             "caseName": "IBA v EMI Electronics and BICC Construction Ltd",
             "year": 1980,
-            "contribution": "Clarified that design and build contractors owe fitness for purpose obligations for design elements unless contract terms limit liability to reasonable skill and care standard."
+            "type": "case",
+            "summary": "Clarified that design and build contractors owe fitness for purpose obligations for design elements unless contract terms limit liability to reasonable skill and care standard."
           },
           {
             "caseName": "Greaves & Co (Contractors) Ltd v Baynham Meikle & Partners",
             "year": 1975,
-            "contribution": "Established that where a contractor undertakes design responsibility and the intended purpose is made known, fitness for purpose obligation is implied even for professional services."
+            "type": "case",
+            "summary": "Established that where a contractor undertakes design responsibility and the intended purpose is made known, fitness for purpose obligation is implied even for professional services."
           },
           {
             "caseName": "MT Højgaard A/S v E.ON Climate & Renewables UK Robin Rigg East Limited",
             "year": 2017,
-            "contribution": "Supreme Court confirmed fitness for purpose obligations can arise even where design complies with applicable standards, emphasizing the absolute nature of the duty and insurance implications."
+            "type": "case",
+            "summary": "Supreme Court confirmed fitness for purpose obligations can arise even where design complies with applicable standards, emphasizing the absolute nature of the duty and insurance implications."
           }
         ]
       },
@@ -116,24 +124,32 @@
       "discovery": {
         "origin": {
           "type": "Common Law (implied terms)",
-          "landmarkCase": "Lin v Gatehouse Construction Co (1992) 84 Ohio App.3d 96",
+          "landmarkCase": {
+            "caseName": "Lin v Gatehouse Construction Co",
+            "year": 1992,
+            "type": "case",
+            "summary": "Established that any contract to perform work imposes on the contractor the duty to perform the work in a workmanlike manner, defined as the way work is customarily done by other contractors in the community."
+          },
           "summary": "Established that any contract to perform work imposes on the contractor the duty to perform the work in a workmanlike manner, defined as the way work is customarily done by other contractors in the community."
         },
         "evolution": [
           {
             "caseName": "Defective Premises Act 1972",
             "year": 1972,
-            "contribution": "Statutory codification requiring contractors working on dwellings to work in a professional or workmanlike manner and use proper materials, with parties unable to exclude this statutory duty."
+            "type": "legislation",
+            "summary": "Statutory codification requiring contractors working on dwellings to work in a professional or workmanlike manner and use proper materials, with parties unable to exclude this statutory duty."
           },
           {
             "caseName": "Building Regulations 2010, Regulation 7",
             "year": 2010,
-            "contribution": "Requires that building work shall be carried out in a workmanlike manner, with Approved Document 7 defining this as workmanship where materials are adequately applied to perform their functions."
+            "type": "legislation",
+            "summary": "Requires that building work shall be carried out in a workmanlike manner, with Approved Document 7 defining this as workmanship where materials are adequately applied to perform their functions."
           },
           {
             "caseName": "Various trade association standards",
             "year": 2000,
-            "contribution": "Development of specific performance standards by organizations like Metropolitan Builders Association and NARI to provide more precise definitions of acceptable workmanship quality."
+            "type": "standard",
+            "summary": "Development of specific performance standards by organizations like Metropolitan Builders Association and NARI to provide more precise definitions of acceptable workmanship quality."
           }
         ]
       },
@@ -213,24 +229,32 @@
       "discovery": {
         "origin": {
           "type": "Common Law (judicial decision)",
-          "landmarkCase": "Ruxley Electronics and Construction Ltd v Forsyth [1996] AC 344 (HL)",
+          "landmarkCase": {
+            "caseName": "Ruxley Electronics and Construction Ltd v Forsyth",
+            "year": 1996,
+            "type": "case",
+            "summary": "House of Lords established that where cost of rectifying construction defects is wholly disproportionate to any benefit obtained, courts should award damages for loss of amenity rather than full reinstatement costs, even where no diminution in value can be proven."
+          },
           "summary": "House of Lords established that where cost of rectifying construction defects is wholly disproportionate to any benefit obtained, courts should award damages for loss of amenity rather than full reinstatement costs, even where no diminution in value can be proven."
         },
         "evolution": [
           {
             "caseName": "County Court (Judge Diamond QC)",
             "year": 1993,
-            "contribution": "Original trial judge awarded £2,500 for loss of amenity rather than £21,560 reinstatement costs for swimming pool depth shortfall, establishing precedent for reasonable approach to construction damages."
+            "type": "procedural",
+            "summary": "Original trial judge awarded £2,500 for loss of amenity rather than £21,560 reinstatement costs for swimming pool depth shortfall, establishing precedent for reasonable approach to construction damages."
           },
           {
             "caseName": "Court of Appeal reversal",
             "year": 1994,
-            "contribution": "Court of Appeal initially overturned trial decision, holding that damages should automatically equal cost of cure where contract not performed as agreed, demonstrating tensions in damages principles."
+            "type": "procedural",
+            "summary": "Court of Appeal initially overturned trial decision, holding that damages should automatically equal cost of cure where contract not performed as agreed, demonstrating tensions in damages principles."
           },
           {
             "caseName": "Farley v Skinner [2001] UKHL 49",
             "year": 2001,
-            "contribution": "House of Lords extended Ruxley principles to surveyor negligence, confirming availability of damages for non-pecuniary loss where parties contemplated peace of mind as contractual objective."
+            "type": "case",
+            "summary": "House of Lords extended Ruxley principles to surveyor negligence, confirming availability of damages for non-pecuniary loss where parties contemplated peace of mind as contractual objective."
           }
         ]
       },
@@ -310,24 +334,32 @@
       "discovery": {
         "origin": {
           "type": "Common Law (judicial development)",
-          "landmarkCase": "Taylor v Caldwell (1863) 3 B & S 826",
+          "landmarkCase": {
+            "caseName": "Taylor v Caldwell",
+            "year": 1863,
+            "type": "case",
+            "summary": "Established frustration doctrine when music hall burnt down before contracted concerts, holding parties discharged from performance where subject matter destroyed without fault. This created exception to absolute contractual obligations principle from Paradine v Jane."
+          },
           "summary": "Established frustration doctrine when music hall burnt down before contracted concerts, holding parties discharged from performance where subject matter destroyed without fault. This created exception to absolute contractual obligations principle from Paradine v Jane."
         },
         "evolution": [
           {
             "caseName": "Davis Contractors Ltd v Fareham Urban District Council [1956] AC 696",
             "year": 1956,
-            "contribution": "Lord Radcliffe provided classic definition: frustration occurs when performance becomes incapable due to circumstances rendering it radically different from what was undertaken by the contract."
+            "type": "case",
+            "summary": "Lord Radcliffe provided classic definition: frustration occurs when performance becomes incapable due to circumstances rendering it radically different from what was undertaken by the contract."
           },
           {
             "caseName": "Law Reform (Frustrated Contracts) Act 1943",
             "year": 1943,
-            "contribution": "Statutory framework for consequences of frustration, allowing courts discretionary powers to apportion losses and provide monetary awards that achieve justice between parties."
+            "type": "legislation",
+            "summary": "Statutory framework for consequences of frustration, allowing courts discretionary powers to apportion losses and provide monetary awards that achieve justice between parties."
           },
           {
             "caseName": "National Carriers Ltd v Panalpina (Northern) Ltd [1981] AC 675",
             "year": 1981,
-            "contribution": "House of Lords confirmed frustration can apply to leases and established that temporary impossibility insufficient unless it effectively destroys the contract's commercial purpose."
+            "type": "case",
+            "summary": "House of Lords confirmed frustration can apply to leases and established that temporary impossibility insufficient unless it effectively destroys the contract's commercial purpose."
           }
         ]
       },
@@ -409,24 +441,32 @@
       "discovery": {
         "origin": {
           "type": "Contractual (civil law concept adopted)",
-          "landmarkCase": "Matsoukis v Priestman [1915] 1 KB 681",
+          "landmarkCase": {
+            "caseName": "Matsoukis v Priestman",
+            "year": 1915,
+            "type": "case",
+            "summary": "English court first extensively interpreted force majeure clause, holding it covered business dislocation from universal coal strike but not routine events like bad weather, establishing distinction between extraordinary and ordinary business risks."
+          },
           "summary": "English court first extensively interpreted force majeure clause, holding it covered business dislocation from universal coal strike but not routine events like bad weather, establishing distinction between extraordinary and ordinary business risks."
         },
         "evolution": [
           {
             "caseName": "Lebeaupin v Crispin [1920] 2 KB 714",
             "year": 1920,
-            "contribution": "Defined force majeure as 'all circumstances beyond the will of man, and which it is not in his power to control', establishing that war, floods, epidemics and strikes constitute force majeure events."
+            "summary": "Defined force majeure as 'all circumstances beyond the will of man, and which it is not in his power to control', establishing that war, floods, epidemics and strikes constitute force majeure events.",
+            "type": "case"
           },
           {
             "caseName": "Channel Island Ferries Ltd v Sealink UK Ltd [1988] 1 Lloyd's Rep 323",
             "year": 1988,
-            "contribution": "Confirmed that force majeure clauses must be strictly construed according to their terms, with courts unable to extend defined events beyond contractual language."
+            "summary": "Confirmed that force majeure clauses must be strictly construed according to their terms, with courts unable to extend defined events beyond contractual language.",
+            "type": "case"
           },
           {
             "caseName": "COVID-19 pandemic cases (various jurisdictions 2020-2023)",
             "year": 2020,
-            "contribution": "Global pandemic prompted extensive litigation establishing that pandemic effects may constitute force majeure depending on specific clause wording and causal connection to performance difficulties."
+            "summary": "Global pandemic prompted extensive litigation establishing that pandemic effects may constitute force majeure depending on specific clause wording and causal connection to performance difficulties.",
+            "type": "case"
           }
         ]
       },
@@ -513,24 +553,32 @@
       "discovery": {
         "origin": {
           "type": "Common Law (judicial development)",
-          "landmarkCase": "Joel v Morison (1834) 6 C & P 501",
+          "landmarkCase": {
+            "caseName": "Joel v Morison",
+            "year": 1834,
+            "type": "case",
+            "summary": "Established foundational principle that masters are liable for servants' acts performed in course of employment, even where master had no knowledge or approval of the specific act causing harm."
+          },
           "summary": "Established foundational principle that masters are liable for servants' acts performed in course of employment, even where master had no knowledge or approval of the specific act causing harm."
         },
         "evolution": [
           {
             "caseName": "Limpus v London General Omnibus Co (1862) 1 H & C 526",
             "year": 1862,
-            "contribution": "Extended vicarious liability to acts expressly forbidden by employer, establishing that prohibition does not necessarily take conduct outside course of employment if closely connected to authorized duties."
+            "summary": "Extended vicarious liability to acts expressly forbidden by employer, establishing that prohibition does not necessarily take conduct outside course of employment if closely connected to authorized duties.",
+            "type": "case"
           },
           {
             "caseName": "Dubai Aluminium Co Ltd v Salaam [2002] UKHL 48",
             "year": 2002,
-            "contribution": "House of Lords modernized test for vicarious liability by focusing on 'close connection' between employment and wrongful act, moving away from rigid 'course of employment' formulation."
+            "summary": "House of Lords modernized test for vicarious liability by focusing on 'close connection' between employment and wrongful act, moving away from rigid 'course of employment' formulation.",
+            "type": "case"
           },
           {
             "caseName": "Various Claimants v WM Morrison Supermarkets [2020] UKSC 12",
             "year": 2020,
-            "contribution": "Supreme Court clarified limits of vicarious liability, holding employer not liable for employee's personal vendetta despite using work facilities, emphasizing need for genuine connection to employment role."
+            "summary": "Supreme Court clarified limits of vicarious liability, holding employer not liable for employee's personal vendetta despite using work facilities, emphasizing need for genuine connection to employment role.",
+            "type": "case"
           }
         ]
       },
@@ -611,24 +659,32 @@
       "discovery": {
         "origin": {
           "type": "Common Law (judicial development)",
-          "landmarkCase": "Woodland v Essex County Council [2013] UKSC 66",
+          "landmarkCase": {
+            "caseName": "Woodland v Essex County Council",
+            "year": 2013,
+            "type": "case",
+            "summary": "Supreme Court established comprehensive framework for non-delegable duties, holding that a school owed pupils a non-delegable duty to ensure swimming lessons were conducted with reasonable care, creating liability for independent swimming instructor's negligence."
+          },
           "summary": "Supreme Court established comprehensive framework for non-delegable duties, holding that a school owed pupils a non-delegable duty to ensure swimming lessons were conducted with reasonable care, creating liability for independent swimming instructor's negligence."
         },
         "evolution": [
           {
             "caseName": "Cassidy v Ministry of Health [1951] 2 KB 343",
             "year": 1951,
-            "contribution": "Early recognition that hospitals owed patients non-delegable duties to ensure competent medical treatment, regardless of whether doctors were employees or independent contractors."
+            "summary": "Early recognition that hospitals owed patients non-delegable duties to ensure competent medical treatment, regardless of whether doctors were employees or independent contractors.",
+            "type": "case"
           },
           {
             "caseName": "McDermid v Nash Dredging [1987] AC 906",
             "year": 1987,
-            "contribution": "House of Lords established employer's non-delegable duty to provide safe system of work for employees, creating liability for negligent systems even when operated by independent contractors."
+            "summary": "House of Lords established employer's non-delegable duty to provide safe system of work for employees, creating liability for negligent systems even when operated by independent contractors.",
+            "type": "case"
           },
           {
             "caseName": "Various Claimants v Institute of the Brothers of the Christian Schools [2012] UKSC 56",
             "year": 2012,
-            "contribution": "Supreme Court extended non-delegable duty concept beyond traditional categories, focusing on relationships where defendant assumed responsibility for claimant's welfare and safety."
+            "summary": "Supreme Court extended non-delegable duty concept beyond traditional categories, focusing on relationships where defendant assumed responsibility for claimant's welfare and safety.",
+            "type": "case"
           }
         ]
       },
@@ -714,24 +770,32 @@
       "discovery": {
         "origin": {
           "type": "Common Law (judicial decision)",
-          "landmarkCase": "Rylands v Fletcher (1868) LR 3 HL 330",
+          "landmarkCase": {
+            "caseName": "Rylands v Fletcher",
+            "year": 1868,
+            "type": "case",
+            "summary": "House of Lords established that those bringing dangerous substances onto land for non-natural use are strictly liable for damage caused by escape, regardless of fault. Fletcher's mill flooded when Rylands' reservoir burst through abandoned mine shafts."
+          },
           "summary": "House of Lords established that those bringing dangerous substances onto land for non-natural use are strictly liable for damage caused by escape, regardless of fault. Fletcher's mill flooded when Rylands' reservoir burst through abandoned mine shafts."
         },
         "evolution": [
           {
             "caseName": "Cambridge Water Co v Eastern Counties Leather [1994] 2 AC 264",
             "year": 1994,
-            "contribution": "House of Lords modernized the rule by requiring reasonable foreseeability of damage type, limiting strict liability while maintaining core principle for industrial activities."
+            "summary": "House of Lords modernized the rule by requiring reasonable foreseeability of damage type, limiting strict liability while maintaining core principle for industrial activities.",
+            "type": "case"
           },
           {
             "caseName": "Transco plc v Stockport MBC [2003] UKHL 61",
             "year": 2003,
-            "contribution": "House of Lords clarified 'non-natural use' test, emphasizing extraordinary risk creation rather than mere artificiality, and rejected calls to abolish the rule entirely."
+            "summary": "House of Lords clarified 'non-natural use' test, emphasizing extraordinary risk creation rather than mere artificiality, and rejected calls to abolish the rule entirely.",
+            "type": "case"
           },
           {
             "caseName": "Stannard v Gore [2012] EWCA Civ 1248",
             "year": 2012,
-            "contribution": "Court of Appeal applied rule to fire spreading from deliberate burning of tires, confirming continued relevance for construction activities involving fire or combustible materials."
+            "summary": "Court of Appeal applied rule to fire spreading from deliberate burning of tires, confirming continued relevance for construction activities involving fire or combustible materials.",
+            "type": "case"
           }
         ]
       },
@@ -812,19 +876,26 @@
       "discovery": {
         "origin": {
           "type": "Common Law (judicial development)",
-          "landmarkCase": "Crosby (J) & Sons Ltd v Portland UDC (1967) 5 BLR 121",
+          "landmarkCase": {
+            "caseName": "Crosby (J) & Sons Ltd v Portland UDC",
+            "year": 1967,
+            "type": "case",
+            "summary": "First recognition that where multiple causes of delay are so complex and interrelated that separation is impractical, global claims may be acceptable if overall causal connection established."
+          },
           "summary": "First recognition that where multiple causes of delay are so complex and interrelated that separation is impractical, global claims may be acceptable if overall causal connection established."
         },
         "evolution": [
           {
             "caseName": "Mid Glamorgan County Council v J Devonald Williams & Partner (1992) 29 Con LR 129",
             "year": 1992,
-            "contribution": "Established that global claims require proof of causation between events claimed for and loss suffered, rejecting purely arithmetical approaches."
+            "summary": "Established that global claims require proof of causation between events claimed for and loss suffered, rejecting purely arithmetical approaches.",
+            "type": "case"
           },
           {
             "caseName": "John Doyle Construction Ltd v Laing Management (Scotland) Ltd [2004] BLR 295",
             "year": 2004,
-            "contribution": "Scottish court clarified that global claims must still establish causal connection and cannot be used simply to avoid burden of detailed analysis where separation is possible."
+            "summary": "Scottish court clarified that global claims must still establish causal connection and cannot be used simply to avoid burden of detailed analysis where separation is possible.",
+            "type": "case"
           }
         ]
       },
@@ -903,19 +974,26 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Arbitration Practice",
-          "landmarkCase": "Serck Controls Ltd v Drake & Scull Engineering Ltd (2000) 73 Con LR 100",
+          "landmarkCase": {
+            "caseName": "Serck Controls Ltd v Drake & Scull Engineering Ltd",
+            "year": 2000,
+            "type": "case",
+            "summary": "English court addressed total cost methodology, emphasizing need to establish causal connection between compensable events and cost overruns while excluding contractor's own inefficiencies."
+          },
           "summary": "English court addressed total cost methodology, emphasizing need to establish causal connection between compensable events and cost overruns while excluding contractor's own inefficiencies."
         },
         "evolution": [
           {
             "caseName": "Various US federal contracting cases",
             "year": 1970,
-            "contribution": "US courts developed strict requirements: actual costs were reasonable; tender was realistic; excess costs caused by defendant's breaches; claimant not responsible for cost overruns."
+            "summary": "US courts developed strict requirements: actual costs were reasonable; tender was realistic; excess costs caused by defendant's breaches; claimant not responsible for cost overruns.",
+            "type": "standard"
           },
           {
             "caseName": "Modern construction arbitrations",
             "year": 2000,
-            "contribution": "Arbitrators increasingly accept modified total cost approaches where some cost breakdown is possible, reducing reliance on pure total cost methodology."
+            "summary": "Arbitrators increasingly accept modified total cost approaches where some cost breakdown is possible, reducing reliance on pure total cost methodology.",
+            "type": "standard"
           }
         ]
       },
@@ -995,19 +1073,26 @@
       "discovery": {
         "origin": {
           "type": "Common Law (equitable principles)",
-          "landmarkCase": "Kammins Ballrooms Co Ltd v Zenith Investments (Torquay) Ltd [1971] AC 850",
+          "landmarkCase": {
+            "caseName": "Kammins Ballrooms Co Ltd v Zenith Investments (Torquay) Ltd",
+            "year": 1971,
+            "type": "case",
+            "summary": "House of Lords distinguished waiver by election (irrevocable choice between inconsistent rights) from waiver by estoppel (preventing unconscionable departure from induced assumptions)."
+          },
           "summary": "House of Lords distinguished waiver by election (irrevocable choice between inconsistent rights) from waiver by estoppel (preventing unconscionable departure from induced assumptions)."
         },
         "evolution": [
           {
             "caseName": "Motor Oil Hellas (Corinth) Refineries SA v Shipping Corp of India [1990] 1 Lloyd's Rep 391",
             "year": 1990,
-            "contribution": "House of Lords clarified requirements for waiver by estoppel: clear representation, reliance, and detriment, making it harder to establish than election."
+            "summary": "House of Lords clarified requirements for waiver by estoppel: clear representation, reliance, and detriment, making it harder to establish than election.",
+            "type": "case"
           },
           {
             "caseName": "Bremer Handelsgesellschaft mbH v Westzucker GmbH [1981] 2 Lloyd's Rep 130",
             "year": 1981,
-            "contribution": "Established that knowledge of facts giving rise to right is essential for valid waiver by election - cannot elect between rights without knowing they exist."
+            "summary": "Established that knowledge of facts giving rise to right is essential for valid waiver by election - cannot elect between rights without knowing they exist.",
+            "type": "case"
           }
         ]
       },
@@ -1088,19 +1173,26 @@
       "discovery": {
         "origin": {
           "type": "Common Law (contractual construction)",
-          "landmarkCase": "Trans Trust SPRL v Danubian Trading Co Ltd [1952] 2 QB 297",
+          "landmarkCase": {
+            "caseName": "Trans Trust SPRL v Danubian Trading Co Ltd",
+            "year": 1952,
+            "type": "case",
+            "summary": "Court of Appeal established distinction between conditions precedent to formation of contract versus conditions precedent to performance of existing contractual obligations."
+          },
           "summary": "Court of Appeal established distinction between conditions precedent to formation of contract versus conditions precedent to performance of existing contractual obligations."
         },
         "evolution": [
           {
             "caseName": "Pym v Campbell (1856) 6 E&B 370",
             "year": 1856,
-            "contribution": "Established that conditions precedent to contract formation prevent any contractual obligations arising until condition satisfied, distinguished from conditions precedent to performance."
+            "summary": "Established that conditions precedent to contract formation prevent any contractual obligations arising until condition satisfied, distinguished from conditions precedent to performance.",
+            "type": "case"
           },
           {
             "caseName": "Coloroll Pension Trustees Ltd v Russell [1994] 4 All ER 33",
             "year": 1994,
-            "contribution": "House of Lords clarified that conditions precedent to performance suspend existing obligations rather than preventing contract formation, affecting remedy availability."
+            "summary": "House of Lords clarified that conditions precedent to performance suspend existing obligations rather than preventing contract formation, affecting remedy availability.",
+            "type": "case"
           }
         ]
       },
@@ -1180,19 +1272,26 @@
       "discovery": {
         "origin": {
           "type": "Common Law (contractual construction)",
-          "landmarkCase": "British Crane Hire Corp Ltd v Ipswich Plant Hire Ltd [1975] QB 303",
+          "landmarkCase": {
+            "caseName": "British Crane Hire Corp Ltd v Ipswich Plant Hire Ltd",
+            "year": 1975,
+            "type": "case",
+            "summary": "Court of Appeal established requirements for successful incorporation: clear reference to external terms, reasonable notice that terms would apply, and consistency between parties' dealings and incorporated terms."
+          },
           "summary": "Court of Appeal established requirements for successful incorporation: clear reference to external terms, reasonable notice that terms would apply, and consistency between parties' dealings and incorporated terms."
         },
         "evolution": [
           {
             "caseName": "Circle Freight International Ltd v Medeast Gulf Exports Ltd [1988] 2 Lloyd's Rep 427",
             "year": 1988,
-            "contribution": "Clarified that incorporation requires clear identification of document version and date, particularly important for evolving standards and conditions."
+            "summary": "Clarified that incorporation requires clear identification of document version and date, particularly important for evolving standards and conditions.",
+            "type": "case"
           },
           {
             "caseName": "Amiri Flight Authority v BAE Systems plc [2003] EWCA Civ 1447",
             "year": 2003,
-            "contribution": "Court of Appeal emphasized need for incorporated terms to be consistent with express contract terms and established hierarchy where express terms prevail over incorporated terms in case of conflict."
+            "summary": "Court of Appeal emphasized need for incorporated terms to be consistent with express contract terms and established hierarchy where express terms prevail over incorporated terms in case of conflict.",
+            "type": "case"
           }
         ]
       },
@@ -1273,19 +1372,26 @@
       "discovery": {
         "origin": {
           "type": "Common Law (tort development)",
-          "landmarkCase": "Andreae v Selfridge & Co Ltd [1938] Ch 1",
+          "landmarkCase": {
+            "caseName": "Andreae v Selfridge & Co Ltd",
+            "year": 1938,
+            "type": "case",
+            "summary": "Court of Appeal established that temporary building operations causing noise, dust, and vibration can constitute nuisance if unreasonable in nature, timing, or duration, but some interference must be tolerated as inevitable."
+          },
           "summary": "Court of Appeal established that temporary building operations causing noise, dust, and vibration can constitute nuisance if unreasonable in nature, timing, or duration, but some interference must be tolerated as inevitable."
         },
         "evolution": [
           {
             "caseName": "Harrison v Southwark and Vauxhall Water Co [1891] 2 Ch 409",
             "year": 1891,
-            "contribution": "Established that nuisance liability can exist even for lawful activities conducted with reasonable care, focusing on unreasonable interference rather than fault."
+            "summary": "Established that nuisance liability can exist even for lawful activities conducted with reasonable care, focusing on unreasonable interference rather than fault.",
+            "type": "case"
           },
           {
             "caseName": "Coventry v Lawrence [2014] UKSC 13",
             "year": 2014,
-            "contribution": "Supreme Court clarified that statutory authorization provides limited defense to nuisance claims, and planning permission doesn't automatically authorize nuisance-level interference."
+            "summary": "Supreme Court clarified that statutory authorization provides limited defense to nuisance claims, and planning permission doesn't automatically authorize nuisance-level interference.",
+            "type": "case"
           }
         ]
       },
@@ -1366,14 +1472,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "Anchor Brewhouse Developments Ltd v Berkley House (Docklands Developments) Ltd (1987) 284 EG 625",
+          "landmarkCase": {
+            "caseName": "Anchor Brewhouse Developments Ltd v Berkley House (Docklands Developments) Ltd",
+            "year": 1987,
+            "type": "case",
+            "summary": "Foundational authority establishing the legal framework for the law of trespass as applied to construction (e.g., crane oversailing) in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the law of trespass as applied to construction (e.g., crane oversailing) in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },
@@ -1443,14 +1555,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "Civil Liability (Contribution) Act 1978",
+          "landmarkCase": {
+            "caseName": "Civil Liability (Contribution) Act 1978",
+            "year": 1978,
+            "type": "legislation",
+            "summary": "Foundational authority establishing the legal framework for the principle of contribution between joint tortfeasors in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the principle of contribution between joint tortfeasors in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },
@@ -1521,14 +1639,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "Ruxley Electronics v Forsyth [1996] AC 344",
+          "landmarkCase": {
+            "caseName": "Ruxley Electronics v Forsyth",
+            "year": 1996,
+            "type": "case",
+            "summary": "Foundational authority establishing the legal framework for the 'no loss' defence in claims for breach in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the 'no loss' defence in claims for breach in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },
@@ -1598,14 +1722,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "Lord Napier and Ettrick v Hunter [1993] AC 713",
+          "landmarkCase": {
+            "caseName": "Lord Napier and Ettrick v Hunter",
+            "year": 1993,
+            "type": "case",
+            "summary": "Foundational authority establishing the legal framework for the doctrine of subrogation in insurance matters in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the doctrine of subrogation in insurance matters in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },
@@ -1676,14 +1806,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "British Anzani (Felixstowe) Ltd v International Marine Management (UK) Ltd [1980] QB 137",
+          "landmarkCase": {
+            "caseName": "British Anzani (Felixstowe) Ltd v International Marine Management (UK) Ltd",
+            "year": 1980,
+            "type": "case",
+            "summary": "Foundational authority establishing the legal framework for the equitable principle of set-off in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the equitable principle of set-off in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },
@@ -1754,14 +1890,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "Contracts (Rights of Third Parties) Act 1999",
+          "landmarkCase": {
+            "caseName": "Contracts (Rights of Third Parties) Act 1999",
+            "year": 1999,
+            "type": "legislation",
+            "summary": "Foundational authority establishing the legal framework for the doctrine of privity of contract and its statutory exceptions in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the doctrine of privity of contract and its statutory exceptions in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },
@@ -1832,14 +1974,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "Murphy v Brentwood District Council [1991] 1 AC 398",
+          "landmarkCase": {
+            "caseName": "Murphy v Brentwood District Council",
+            "year": 1991,
+            "type": "case",
+            "summary": "Foundational authority establishing the legal framework for the principles underpinning collateral warranties in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the principles underpinning collateral warranties in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },
@@ -1910,14 +2058,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "Motherwell Bridge Construction Ltd v Micafil Vakuumtechnik [2002] BLR 415",
+          "landmarkCase": {
+            "caseName": "Motherwell Bridge Construction Ltd v Micafil Vakuumtechnik",
+            "year": 2002,
+            "type": "case",
+            "summary": "Foundational authority establishing the legal framework for the concept of constructive acceleration of works in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the concept of constructive acceleration of works in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },
@@ -1987,14 +2141,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "Scott v Avery (1856) 5 HLC 811",
+          "landmarkCase": {
+            "caseName": "Scott v Avery",
+            "year": 1856,
+            "type": "case",
+            "summary": "Foundational authority establishing the legal framework for the scott v avery clause (arbitration as a precondition to litigation) in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the scott v avery clause (arbitration as a precondition to litigation) in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },
@@ -2065,14 +2225,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "The Moorcock (1889) 14 PD 64",
+          "landmarkCase": {
+            "caseName": "The Moorcock",
+            "year": 1889,
+            "type": "case",
+            "summary": "Foundational authority establishing the legal framework for the 'officious bystander' test for implied terms in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the 'officious bystander' test for implied terms in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },
@@ -2143,14 +2309,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "Joscelyne v Nissen [1970] 2 QB 86",
+          "landmarkCase": {
+            "caseName": "Joscelyne v Nissen",
+            "year": 1970,
+            "type": "case",
+            "summary": "Foundational authority establishing the legal framework for the doctrine of rectification for common mistake in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the doctrine of rectification for common mistake in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },
@@ -2221,14 +2393,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "Lumley v Gye (1853) 2 E & B 216",
+          "landmarkCase": {
+            "caseName": "Lumley v Gye",
+            "year": 1853,
+            "type": "case",
+            "summary": "Foundational authority establishing the legal framework for the economic torts (e.g., inducing breach of contract) in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the economic torts (e.g., inducing breach of contract) in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },
@@ -2299,14 +2477,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "Credit Lyonnais Bank Nederland NV v Burch [1997] 1 All ER 144",
+          "landmarkCase": {
+            "caseName": "Credit Lyonnais Bank Nederland NV v Burch",
+            "year": 1997,
+            "type": "case",
+            "summary": "Foundational authority establishing the legal framework for the doctrine of unconscionability in contractual bargains in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the doctrine of unconscionability in contractual bargains in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },
@@ -2377,14 +2561,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "Dering v Earl of Winchelsea (1787) 1 Cox Eq Cas 318",
+          "landmarkCase": {
+            "caseName": "Dering v Earl of Winchelsea",
+            "year": 1787,
+            "type": "case",
+            "summary": "Foundational authority establishing the legal framework for the equitable maxim of 'clean hands' in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the equitable maxim of 'clean hands' in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },
@@ -2455,14 +2645,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "Fibrosa Spolka Akcyjna v Fairbairn Lawson Combe Barbour Ltd [1943] AC 32",
+          "landmarkCase": {
+            "caseName": "Fibrosa Spolka Akcyjna v Fairbairn Lawson Combe Barbour Ltd",
+            "year": 1943,
+            "type": "case",
+            "summary": "Foundational authority establishing the legal framework for the doctrine of total failure of consideration in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the doctrine of total failure of consideration in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },
@@ -2533,14 +2729,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "French Civil Code Article 1792",
+          "landmarkCase": {
+            "caseName": "French Civil Code Article 1792",
+            "year": 1804,
+            "type": "legislation",
+            "summary": "Foundational authority establishing the legal framework for the principles of decennial liability (primarily in civil law systems but influential) in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the principles of decennial liability (primarily in civil law systems but influential) in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },
@@ -2611,14 +2813,20 @@
       "discovery": {
         "origin": {
           "type": "Common Law and Statute",
-          "landmarkCase": "Housing Grants, Construction and Regeneration Act 1996, s.113",
+          "landmarkCase": {
+            "caseName": "Housing Grants, Construction and Regeneration Act 1996, s.113",
+            "year": 1996,
+            "type": "legislation",
+            "summary": "Foundational authority establishing the legal framework for the concept of 'pay-when-paid' and its statutory prohibition in construction and commercial law contexts."
+          },
           "summary": "Foundational authority establishing the legal framework for the concept of 'pay-when-paid' and its statutory prohibition in construction and commercial law contexts."
         },
         "evolution": [
           {
             "caseName": "Various subsequent developments",
             "year": 2000,
-            "contribution": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law."
+            "summary": "Continued judicial and legislative refinement of the principle's application and scope in modern construction law.",
+            "type": "procedural"
           }
         ]
       },

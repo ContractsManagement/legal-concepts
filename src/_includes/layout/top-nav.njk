@@ -1,4 +1,4 @@
-<nav id="header" class=" fixed w-full z-10 top-0 bg-gray-100 shadow-md ">
+<nav id="header" class=" fixed w-full z-10 top-0 bg-gray-200 shadow-md ">
   <div class="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-4  ">
     <div class="pl-4 flex items-center">
       <img src="{{ site.logoUrl | url }}" alt="Logo" class="h-5 mr-1"/>
@@ -26,11 +26,15 @@
       {% endif %}
       </div>
       <ul class="list-reset md:flex justify-end items-center list-none text-sm">
+        {% set renderedItems = [] %}
         {% for menuItem in site.menu.top %}
-          <li class="mr-3 py-2 md:py-0" title="{{menuItem.tooltip}}">
-            <a href="{{menuItem.href | url}}" class="inline-block py-2 px-2 font-bold no-underline hover:underline hover:bg-primary bg:rounded-md hover:text-white  uppercase">
-              <i class="{{menuItem.icon}} fill-current "></i>{{menuItem.title}}</a>
-          </li>
+          {% if menuItem.href not in renderedItems %}
+            {% set renderedItems = renderedItems.concat([menuItem.href]) %}
+            <li class="mr-3 py-2 md:py-0" title="{{menuItem.tooltip}}">
+              <a href="{{menuItem.href | url}}" class="inline-block py-2 px-2 font-bold no-underline hover:underline hover:bg-primary bg:rounded-md hover:text-white  uppercase">
+                <i class="{{menuItem.icon}} fill-current "></i>{{menuItem.title}}</a>
+            </li>
+          {% endif %}
         {% endfor %}
       </ul>
 

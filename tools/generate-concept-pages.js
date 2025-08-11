@@ -1,6 +1,12 @@
 const fs = require('fs');
 const path = require('path');
+console.log('Loading legal concepts data...');
 const legalConcepts = require('../src/_data/legal_concepts.json');
+console.log('Legal concepts loaded:', !!legalConcepts);
+console.log('Principles array:', !!legalConcepts.principles);
+if (legalConcepts.principles) {
+  console.log('Number of principles:', legalConcepts.principles.length);
+}
 
 // Create a slug from a string
 function createSlug(text) {
@@ -16,10 +22,20 @@ function createSlug(text) {
 function generateConceptPages() {
   const conceptsDir = path.join(__dirname, '../src/concepts/repo');
 
+  console.log(`Loading legal concepts from: ${require.resolve('../src/_data/legal_concepts.json')}`);
+  console.log(`Found ${legalConcepts.principles ? legalConcepts.principles.length : 0} principles to process`);
+
   // Ensure directory exists
   if (!fs.existsSync(conceptsDir)) {
     fs.mkdirSync(conceptsDir, { recursive: true });
   }
+
+  // Remove all existing markdown files in the conceptsDir before regenerating
+  const oldFiles = fs.readdirSync(conceptsDir).filter(f => f.endsWith('.md'));
+  console.log(`Removing ${oldFiles.length} existing markdown files`);
+  oldFiles.forEach(f => {
+    fs.unlinkSync(path.join(conceptsDir, f));
+  });
 
   legalConcepts.principles.forEach((concept, index) => {
     const slug = createSlug(concept.principleName);
@@ -31,7 +47,7 @@ title: "${concept.principleName}"
 description: "${concept.coreConcept.elevatorPitch.replace(/"/g, '\\"')}"
 keywords: "${concept.principleName}, ${concept.aliases ? concept.aliases.join(', ') + ', ' : ''}${concept.fieldOfLaw}, ${concept.primaryJurisdiction}, construction law, legal concept"
 layout: concepts/concepts_item.njk
-permalink: "{{ site.rootUrl }}/concepts/{{ title | slug }}/"
+permalink: "/concepts/{{ title | slug }}/"
 concept:
   principleName: "${concept.principleName}"
   aliases: ${JSON.stringify(concept.aliases || [])}
@@ -48,9 +64,11 @@ concept:
     evolution: ${JSON.stringify(concept.discovery?.evolution || [])}
   deconstruction:
     essentialElementsTest: ${JSON.stringify(concept.deconstruction?.essentialElementsTest || [])}
+  dissemination: ${JSON.stringify(concept.dissemination || {})}
+  deployment: ${JSON.stringify(concept.deployment || {})}
+  relevantPrinciples: ${JSON.stringify(concept.relevantPrinciples || {})}
 tags: 
   - legal-concept
-  - construction-law
   - construction-law
 ---
 

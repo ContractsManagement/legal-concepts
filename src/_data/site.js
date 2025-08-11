@@ -1,4 +1,4 @@
-const _site = require("./site.json");
+import _site from "./site.json" with { type: "json" };
 
 let site = {
     ..._site,
@@ -29,4 +29,6 @@ if (process.env.DISQUS_SITE_NAME) {
     site.DISQUS_SITE_NAME = process.env.DISQUS_SITE_NAME;
 }
 
-module.exports = site;
+console.log("Site configuration loaded:", site);
+console.log("Site Menu Top:", site.menu.top);
+export default site;

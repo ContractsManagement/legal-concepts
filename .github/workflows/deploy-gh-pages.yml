@@ -30,7 +30,7 @@ jobs:
         env:
           REPO_URL: https://github.com/ContractsManagement/legal-concepts.git
           # WEB_PATH_PREFIX: /
-          WEB_ROOT_URL: https://contractsmanagement.github.io/legal-concepts
+          WEB_ROOT_URL: https://contractsmanagement.github.io/
 
       - name: GitHub Pages action
         uses: peaceiris/actions-gh-pages@v4.0.0

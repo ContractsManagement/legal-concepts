@@ -1,0 +1,23 @@
+---
+permalink: /api/jurisdictions.json
+---
+[
+  {% for jurisdiction in collections.jurisdiction %}
+  {
+    "name": "{{ jurisdiction.name }}",
+    "slug": "{{ jurisdiction.name | slug }}",
+    "conceptCount": {{ jurisdiction.concepts.length }},
+    "concepts": [
+      {% for concept in jurisdiction.concepts %}
+      {
+        "principleName": "{{ concept.data.concept.principleName }}",
+        "slug": "{{ concept.data.concept.principleName | slug }}",
+        "fieldOfLaw": "{{ concept.data.concept.fieldOfLaw }}",
+        "elevatorPitch": "{{ concept.data.concept.coreConcept.elevatorPitch | truncate(200) | escape }}",
+        "url": "/concepts/{{ concept.data.concept.principleName | slug }}/"
+      }{{ '' if loop.last else ',' }}
+      {% endfor %}
+    ]
+  }{{ '' if loop.last else ',' }}
+  {% endfor %}
+]

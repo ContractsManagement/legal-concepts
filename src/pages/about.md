@@ -1,5 +1,6 @@
 ---
 title: About
+layout: layout/base.njk
 ---
 
 ## Construction Law Concepts Repository

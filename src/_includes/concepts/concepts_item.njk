@@ -102,9 +102,94 @@ keywords: "{{ concept.principleName }}, {% if concept.aliases %}{{ concept.alias
             </div>
         </section>
         {% endif %}
+
+        {% if concept.dissemination %}
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Practical Application</h2>
+            
+            {% if concept.dissemination.hypotheticalExample %}
+            <div class="bg-indigo-50 p-6 rounded-lg mb-6">
+                <h3 class="text-lg font-semibold text-indigo-800 mb-3">Hypothetical Example</h3>
+                {% if concept.dissemination.hypotheticalExample.scenario %}
+                <div class="mb-4">
+                    <h4 class="font-semibold text-indigo-700 mb-2">Scenario:</h4>
+                    <p class="text-indigo-600 leading-relaxed">{{ concept.dissemination.hypotheticalExample.scenario }}</p>
+                </div>
+                {% endif %}
+                {% if concept.dissemination.hypotheticalExample.outcome %}
+                <div>
+                    <h4 class="font-semibold text-indigo-700 mb-2">Legal Outcome:</h4>
+                    <p class="text-indigo-600 leading-relaxed">{{ concept.dissemination.hypotheticalExample.outcome }}</p>
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+            
+            {% if concept.dissemination.audienceAdaptation %}
+            <div class="grid md:grid-cols-2 gap-6">
+                {% if concept.dissemination.audienceAdaptation.forClient %}
+                <div class="bg-green-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-green-800 mb-3">For Clients</h3>
+                    <p class="text-green-700 leading-relaxed">{{ concept.dissemination.audienceAdaptation.forClient }}</p>
+                </div>
+                {% endif %}
+                {% if concept.dissemination.audienceAdaptation.forLawyer %}
+                <div class="bg-purple-50 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-purple-800 mb-3">For Lawyers</h3>
+                    <p class="text-purple-700 leading-relaxed">{{ concept.dissemination.audienceAdaptation.forLawyer }}</p>
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+        </section>
+        {% endif %}
+
+        {% if concept.deployment %}
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Legal Strategy & Consequences</h2>
+            
+            {% if concept.deployment.application %}
+            <div class="grid md:grid-cols-2 gap-6 mb-6">
+                {% if concept.deployment.application.affirmativeArgument %}
+                <div class="bg-emerald-50 border border-emerald-200 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-emerald-800 mb-3">Affirmative Arguments</h3>
+                    <p class="text-emerald-700 leading-relaxed">{{ concept.deployment.application.affirmativeArgument }}</p>
+                </div>
+                {% endif %}
+                {% if concept.deployment.application.defensiveArgument %}
+                <div class="bg-red-50 border border-red-200 p-6 rounded-lg">
+                    <h3 class="text-lg font-semibold text-red-800 mb-3">Defensive Arguments</h3>
+                    <p class="text-red-700 leading-relaxed">{{ concept.deployment.application.defensiveArgument }}</p>
+                </div>
+                {% endif %}
+            </div>
+            {% endif %}
+            
+            {% if concept.deployment.legalConsequence %}
+            <div class="bg-orange-50 border-l-4 border-orange-400 p-6">
+                <h3 class="text-lg font-semibold text-orange-800 mb-3">Legal Consequences</h3>
+                <p class="text-orange-700 leading-relaxed">{{ concept.deployment.legalConsequence }}</p>
+            </div>
+            {% endif %}
+        </section>
+        {% endif %}
+
+        {% if concept.relevantPrinciples and (concept.relevantPrinciples | length > 0) %}
+        <section class="mb-8">
+            <h2 class="text-2xl font-bold text-gray-900 mb-4">Related Legal Principles</h2>
+            <div class="space-y-4">
+                {% for principle, description in concept.relevantPrinciples %}
+                <div class="bg-slate-50 p-4 rounded-lg border-l-4 border-slate-400">
+                    <h3 class="font-semibold text-slate-800 mb-2">{{ principle }}</h3>
+                    <p class="text-slate-700">{{ description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </section>
+        {% endif %}
     </article>
 
-        <div class="mb-6">
+    <div class="mb-6">
         <a href="/concepts/" class="text-blue-600 hover:underline">&larr; Back to Legal Concepts</a>
     </div>
 </div>
@@ -114,15 +199,3 @@ keywords: "{{ concept.principleName }}, {% if concept.aliases %}{{ concept.alias
     margin-bottom: 1rem;
 }
 </style>
-
-
-    <div>{{ content | safe }}</div>
-</div>
-
-<hr />
-{% if meta and meta.update and meta.author %}
-<p class="content-center text-sm text-gray-600">{{ site.updatedOn }}: {{ meta.update  | formatDate("DD") }}, {{ site.by }}  {{ meta.author }}</p>
-{% endif %}
-{% if site.repoUrl %}
-<a class="text-sm" href="{{ site.repoUrl }}/edit/{{ site.repoDefaultBranch }}/{{page.inputPath}}">{{ site[locale]._t.edit_on_git }}</a>
-{% endif %}
